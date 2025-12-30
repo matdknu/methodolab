@@ -1,0 +1,25 @@
+# Excluir todos los archivos de documentación .md excepto README.md
+*.md
+!README.md
+!Publicaciones-QMD/**/*.qmd
+
+# Excluir carpetas y archivos que no son parte del proyecto Quarto
+css/
+js/
+logos/
+images/
+Publicaciones/
+scripts/
+*.html
+*.json
+*.Rproj
+*.R
+*.py
+*.js
+*.css
+CNAME
+_freeze/
+publicaciones-renderizadas/
+.git/
+node_modules/
+

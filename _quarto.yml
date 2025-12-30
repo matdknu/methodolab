@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: publicaciones-renderizadas
+  render:
+    - "Publicaciones-QMD/**/*.qmd"
 
 website:
   title: "Methodolab Publicaciones"
