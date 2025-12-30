@@ -66,13 +66,10 @@ function renderPosts(posts) {
 
 function updateVerMasButton(totalPosts) {
     const verMasContainer = document.getElementById('ver-mas-container');
-    const verMasBtn = document.getElementById('ver-mas-btn');
     
     if (totalPosts > postsToShow) {
         verMasContainer.style.display = 'block';
-        if (verMasBtn) {
-            verMasBtn.textContent = getTranslation('verMas');
-        }
+        // El texto se actualiza automáticamente con data-translate
     } else {
         verMasContainer.style.display = 'none';
     }
