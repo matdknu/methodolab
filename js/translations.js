@@ -33,7 +33,8 @@ const translations = {
         
         // Posts
         leerMas: "Leer más →",
-        por: "por"
+        por: "por",
+        verMas: "Ver más"
     },
     en: {
         // Navigation
@@ -68,7 +69,8 @@ const translations = {
         
         // Posts
         leerMas: "Read more →",
-        por: "by"
+        por: "by",
+        verMas: "See more"
     }
 };
 

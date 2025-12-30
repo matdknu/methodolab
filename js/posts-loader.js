@@ -1,5 +1,8 @@
 // Cargar posts desde posts.json y renderizarlos
 // Asegurar que las traducciones estén disponibles
+let postsToShow = 5; // Mostrar solo 5 inicialmente
+let allRegularPosts = [];
+
 document.addEventListener('DOMContentLoaded', function() {
     // Re-renderizar posts cuando cambie el idioma
     if (typeof window.languageChangeCallback === 'undefined') {
@@ -8,8 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (window.allPosts && window.allPosts.length > 0) {
                 const featuredPost = window.allPosts.find(post => post.featured);
                 const regularPosts = window.allPosts.filter(post => !post.featured);
+                allRegularPosts = regularPosts;
                 if (featuredPost) renderFeaturedPost(featuredPost);
-                renderPostsGrid(regularPosts);
+                renderPostsGrid(regularPosts.slice(0, postsToShow));
+                updateVerMasButton(regularPosts.length);
             }
         };
     }
@@ -45,14 +50,35 @@ function renderPosts(posts) {
     // Separar posts destacados y regulares
     const featuredPost = posts.find(post => post.featured);
     const regularPosts = posts.filter(post => !post.featured);
+    allRegularPosts = regularPosts;
 
     // Renderizar post destacado
     if (featuredPost) {
         renderFeaturedPost(featuredPost);
     }
 
-    // Renderizar grid de posts
-    renderPostsGrid(regularPosts);
+    // Renderizar solo los primeros 5 posts
+    renderPostsGrid(regularPosts.slice(0, postsToShow));
+    
+    // Mostrar/ocultar botón "Ver más"
+    updateVerMasButton(regularPosts.length);
+}
+
+function updateVerMasButton(totalPosts) {
+    const verMasContainer = document.getElementById('ver-mas-container');
+    const verMasBtn = document.getElementById('ver-mas-btn');
+    
+    if (totalPosts > postsToShow) {
+        verMasContainer.style.display = 'block';
+        verMasBtn.textContent = getTranslation('verMas');
+        verMasBtn.onclick = function() {
+            // Mostrar todos los posts
+            renderPostsGrid(allRegularPosts);
+            verMasContainer.style.display = 'none';
+        };
+    } else {
+        verMasContainer.style.display = 'none';
+    }
 }
 
 function renderFeaturedPost(post) {
