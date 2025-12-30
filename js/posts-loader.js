@@ -1,6 +1,6 @@
 // Cargar posts desde posts.json y renderizarlos
 // Asegurar que las traducciones estén disponibles
-let postsToShow = 5; // Mostrar solo 5 inicialmente
+let postsToShow = 4; // Mostrar solo 4 inicialmente
 let allRegularPosts = [];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -48,19 +48,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function renderPosts(posts) {
     // Separar posts destacados y regulares
-    const featuredPost = posts.find(post => post.featured);
-    const regularPosts = posts.filter(post => !post.featured);
+    const featuredPost = posts.find(post => post.featured === true);
+    const regularPosts = posts.filter(post => post.featured !== true);
     allRegularPosts = regularPosts;
+
+    console.log('Publicación destacada:', featuredPost ? featuredPost.title : 'ninguna');
+    console.log('Publicaciones regulares:', regularPosts.length);
+    console.log('Mostrando en grid:', Math.min(regularPosts.length, postsToShow));
 
     // Renderizar post destacado
     if (featuredPost) {
         renderFeaturedPost(featuredPost);
     }
 
-    // Renderizar solo los primeros 5 posts
-    renderPostsGrid(regularPosts.slice(0, postsToShow));
+    // Renderizar solo los primeros 4 posts (sin destacados)
+    const postsToDisplay = regularPosts.slice(0, postsToShow);
+    renderPostsGrid(postsToDisplay);
     
-    // Mostrar/ocultar botón "Ver más"
+    // Mostrar/ocultar botón "Ver más" (debe haber más de 4 regulares)
     updateVerMasButton(regularPosts.length);
 }
 

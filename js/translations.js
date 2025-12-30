@@ -2,6 +2,7 @@
 const translations = {
     es: {
         // Navegación
+        navInicio: "Inicio",
         navPublicaciones: "Publicaciones",
         navSobreNosotros: "Sobre Nosotros",
         navContacto: "Contacto",
@@ -35,12 +36,14 @@ const translations = {
         leerMas: "Leer más →",
         por: "por",
         verMas: "Ver todas las publicaciones",
+        verTodasInteractivas: "Ver todas las interactivas",
         
         // Botones
         btnSobreNosotros: "Sobre Nosotros"
     },
     en: {
         // Navigation
+        navInicio: "Home",
         navPublicaciones: "Publications",
         navSobreNosotros: "About Us",
         navContacto: "Contact",
@@ -74,6 +77,7 @@ const translations = {
         leerMas: "Read more →",
         por: "by",
         verMas: "See all publications",
+        verTodasInteractivas: "See all interactive tools",
         
         // Botones
         btnSobreNosotros: "About Us"

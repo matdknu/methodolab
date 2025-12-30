@@ -10,17 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(posts => {
             console.log('Todas las publicaciones cargadas:', posts.length);
-            // Mostrar todas las publicaciones (sin destacado)
-            const allPosts = posts.filter(post => !post.featured);
-            renderAllPosts(allPosts);
+            // Mostrar TODAS las publicaciones (incluyendo destacadas)
+            renderAllPosts(posts);
         })
         .catch(error => {
             console.warn('No se pudo cargar posts.json, usando datos embebidos:', error);
             // Usar datos embebidos como respaldo
             if (typeof postsData !== 'undefined') {
                 console.log('Usando postsData embebido:', postsData.length);
-                const allPosts = postsData.filter(post => !post.featured);
-                renderAllPosts(allPosts);
+                // Mostrar TODAS las publicaciones (incluyendo destacadas)
+                renderAllPosts(postsData);
             } else {
                 console.error('No hay datos de posts disponibles');
                 document.getElementById('articulos-container').innerHTML = 

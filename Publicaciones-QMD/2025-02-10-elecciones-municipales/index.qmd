@@ -1,0 +1,21 @@
+---
+title: "Patrones de participación en las elecciones municipales 2024"
+tipo: "difusion"
+category: "elecciones"
+date: "Febrero 10, de 2025"
+author: "Matías Deneken"
+authorLink: "#"
+description: "Análisis de los patrones de participación electoral en las elecciones municipales, identificando factores que influyen en la movilización ciudadana."
+link: "publicaciones/elecciones-municipales.html"
+featured: false
+image_type: "mapa"
+---
+
+## Resumen
+
+Este análisis examina los patrones de participación en las elecciones municipales de 2024, identificando factores demográficos, socioeconómicos y geográficos que influyen en la movilización ciudadana.
+
+## Hallazgos
+
+Las comunas con mayor participación electoral tienden a tener características específicas relacionadas con el nivel educativo, la edad promedio de la población y la densidad urbana.
+

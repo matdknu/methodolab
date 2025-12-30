@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: publicaciones-renderizadas
+
+website:
+  title: "Methodolab Publicaciones"
+  navbar:
+    left:
+      - href: ../index.html
+        text: Inicio
+      - href: ../nosotros.html
+        text: Sobre Nosotros
+      - href: ../index.html#contacto
+        text: Contacto
+
+format:
+  html:
+    theme: 
+      - default
+      - custom.scss
+    css: ../css/style.css
+    toc: false
+    code-fold: false
+
