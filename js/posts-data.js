@@ -1,0 +1,95 @@
+// Datos de posts embebidos como respaldo
+const postsData = [
+  {
+    "id": 1,
+    "featured": true,
+    "tipo": "difusion",
+    "category": "investigación",
+    "title": "Metodologías Avanzadas para el Análisis de Datos Sociales",
+    "date": "Diciembre 15, de 2024",
+    "author": "Equipo Methodolab",
+    "authorLink": "#",
+    "description": "Desarrollamos técnicas innovadoras para el análisis de datos sociales, combinando rigor metodológico con aplicaciones prácticas en investigación empírica.",
+    "link": "#",
+    "image": "mapa"
+  },
+  {
+    "id": 2,
+    "featured": false,
+    "tipo": "academico",
+    "category": "metodología",
+    "title": "Herramientas Computacionales para Investigación Social",
+    "date": "Noviembre 20, de 2024",
+    "author": "Autor(es)",
+    "authorLink": "#",
+    "description": "Desarrollo de software y herramientas open-source para facilitar el análisis de datos y la investigación metodológica.",
+    "link": "#",
+    "image": "grafico"
+  },
+  {
+    "id": 3,
+    "featured": false,
+    "tipo": "difusion",
+    "category": "análisis",
+    "title": "Técnicas de Visualización de Datos Sociales",
+    "date": "Octubre 10, de 2024",
+    "author": "Autor(es)",
+    "authorLink": "#",
+    "description": "Exploración de métodos avanzados para visualizar y comunicar resultados de análisis de datos sociales de manera efectiva.",
+    "link": "#",
+    "image": "datos"
+  },
+  {
+    "id": 4,
+    "featured": false,
+    "tipo": "academico",
+    "category": "metodología",
+    "title": "Diseño Experimental en Ciencias Sociales",
+    "date": "Septiembre 5, de 2024",
+    "author": "Autor(es)",
+    "authorLink": "#",
+    "description": "Aplicación de métodos experimentales y cuasi-experimentales en estudios de ciencias sociales.",
+    "link": "#",
+    "image": "mapa"
+  },
+  {
+    "id": 5,
+    "featured": false,
+    "tipo": "difusion",
+    "category": "herramientas",
+    "title": "Paquetes R para Análisis de Datos Sociales",
+    "date": "Agosto 18, de 2024",
+    "author": "Autor(es)",
+    "authorLink": "#",
+    "description": "Desarrollo y documentación de paquetes R especializados para análisis metodológico en ciencias sociales.",
+    "link": "#",
+    "image": "grafico"
+  },
+  {
+    "id": 6,
+    "featured": false,
+    "tipo": "academico",
+    "category": "análisis",
+    "title": "Machine Learning en Investigación Social",
+    "date": "Julio 22, de 2024",
+    "author": "Autor(es)",
+    "authorLink": "#",
+    "description": "Aplicación de técnicas de machine learning y aprendizaje automático en problemas de investigación social.",
+    "link": "#",
+    "image": "datos"
+  },
+  {
+    "id": 7,
+    "featured": false,
+    "tipo": "difusion",
+    "category": "metodología",
+    "title": "Análisis Causal en Estudios Observacionales",
+    "date": "Junio 8, de 2024",
+    "author": "Autor(es)",
+    "authorLink": "#",
+    "description": "Métodos para inferencia causal en estudios observacionales de ciencias sociales.",
+    "link": "#",
+    "image": "mapa"
+  }
+];
+

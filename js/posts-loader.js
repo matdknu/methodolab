@@ -1,57 +1,44 @@
 // Cargar posts desde posts.json y renderizarlos
 document.addEventListener('DOMContentLoaded', function() {
-    // Intentar cargar desde diferentes rutas
-    const possiblePaths = [
-        'posts.json',
-        './posts.json',
-        '/posts.json'
-    ];
-    
-    let pathIndex = 0;
-    
-    function tryFetch() {
-        if (pathIndex >= possiblePaths.length) {
-            // Si todas las rutas fallaron, mostrar error
-            console.error('Error: No se pudo cargar posts.json desde ninguna ruta');
-            document.getElementById('articulos-container').innerHTML = 
-                '<p>Error cargando publicaciones. Por favor, verifica que posts.json existe en la raíz del proyecto.</p>';
-            return;
-        }
-        
-        const path = possiblePaths[pathIndex];
-        console.log('Intentando cargar desde:', path);
-        
-        fetch(path)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(posts => {
-                console.log('Posts cargados exitosamente:', posts.length);
-                
-                // Separar posts destacados y regulares
-                const featuredPost = posts.find(post => post.featured);
-                const regularPosts = posts.filter(post => !post.featured);
-
-                // Renderizar post destacado
-                if (featuredPost) {
-                    renderFeaturedPost(featuredPost);
-                }
-
-                // Renderizar grid de posts
-                renderPostsGrid(regularPosts);
-            })
-            .catch(error => {
-                console.error(`Error cargando desde ${path}:`, error);
-                pathIndex++;
-                tryFetch();
-            });
-    }
-    
-    tryFetch();
+    // Intentar cargar desde posts.json primero
+    fetch('posts.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(posts => {
+            console.log('Posts cargados desde posts.json:', posts.length);
+            renderPosts(posts);
+        })
+        .catch(error => {
+            console.warn('No se pudo cargar posts.json, usando datos embebidos:', error);
+            // Usar datos embebidos como respaldo
+            if (typeof postsData !== 'undefined') {
+                console.log('Usando postsData embebido:', postsData.length);
+                renderPosts(postsData);
+            } else {
+                console.error('No hay datos de posts disponibles');
+                document.getElementById('articulos-container').innerHTML = 
+                    '<p>Error cargando publicaciones. Por favor, verifica que posts.json existe.</p>';
+            }
+        });
 });
+
+function renderPosts(posts) {
+    // Separar posts destacados y regulares
+    const featuredPost = posts.find(post => post.featured);
+    const regularPosts = posts.filter(post => !post.featured);
+
+    // Renderizar post destacado
+    if (featuredPost) {
+        renderFeaturedPost(featuredPost);
+    }
+
+    // Renderizar grid de posts
+    renderPostsGrid(regularPosts);
+}
 
 function renderFeaturedPost(post) {
     const container = document.getElementById('destacado-container');
