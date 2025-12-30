@@ -351,6 +351,22 @@ a:hover {
     border-bottom: 1px solid var(--border);
 }
 
+.publicaciones-layout {
+    display: grid;
+    grid-template-columns: 1fr 0.33fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.publicaciones-main {
+    min-width: 0;
+}
+
+.interactivos-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
 
 /* Artículos */
 .articulos {
@@ -460,28 +476,23 @@ a:hover {
     color: var(--text);
 }
 
-/* Interactivos */
-.interactivos {
-    padding: 4rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.section-title {
+/* Interactivos Sidebar */
+.sidebar-title {
     font-family: 'Crimson Text', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: var(--text);
 }
 
-.interactivos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.interactivos-list {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
 .interactivo-item {
-    text-align: center;
+    width: 100%;
 }
 
 .interactivo-image {
@@ -489,19 +500,23 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-.interactivo-item .image-placeholder {
-    padding-top: 100%;
+.interactivo-item .data-visualization,
+.interactivo-item .data-analysis,
+.interactivo-item .code-repo {
+    padding-top: 75%;
 }
 
 .interactivo-item h3 {
     font-family: 'Crimson Text', serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--text);
+    line-height: 1.4;
 }
 
 .interactivo-item a {
     text-decoration: none;
+    display: block;
 }
 
 .interactivo-item a:hover h3 {
@@ -598,6 +613,15 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 968px) {
+    .publicaciones-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .interactivos-sidebar {
+        position: static;
+    }
+
     .destacado-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -608,8 +632,10 @@ a:hover {
         gap: 3rem;
     }
 
-    .interactivos-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .interactivos-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -666,7 +692,7 @@ a:hover {
         padding: 3rem 0;
     }
 
-    .interactivos-grid {
+    .interactivos-list {
         grid-template-columns: 1fr;
     }
 }

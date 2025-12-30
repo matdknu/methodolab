@@ -45,42 +45,44 @@
         <!-- Publicaciones se cargan aquí desde posts.json -->
         <section id="publicaciones" class="publicaciones">
             <div class="container">
-                <!-- Destacado se carga aquí -->
-                <div id="destacado-container"></div>
-                
-                <!-- Grid de artículos se carga aquí -->
-                <div id="articulos-container" class="articulos-grid"></div>
-            </div>
-        </section>
-
-        <section id="recursos" class="interactivos">
-            <div class="container">
-                <h2 class="section-title">Interactivos</h2>
-                <div class="interactivos-grid">
-                    <div class="interactivo-item">
-                        <a href="#">
-                            <div class="interactivo-image">
-                                <div class="data-visualization"></div>
-                            </div>
-                            <h3>Visualización de Datos</h3>
-                        </a>
+                <div class="publicaciones-layout">
+                    <div class="publicaciones-main">
+                        <!-- Destacado se carga aquí -->
+                        <div id="destacado-container"></div>
+                        
+                        <!-- Grid de artículos se carga aquí -->
+                        <div id="articulos-container" class="articulos-grid"></div>
                     </div>
-                    <div class="interactivo-item">
-                        <a href="#">
-                            <div class="interactivo-image">
-                                <div class="data-analysis"></div>
+                    
+                    <aside class="interactivos-sidebar">
+                        <h2 class="sidebar-title">Interactivos</h2>
+                        <div class="interactivos-list">
+                            <div class="interactivo-item">
+                                <a href="#">
+                                    <div class="interactivo-image">
+                                        <div class="data-visualization"></div>
+                                    </div>
+                                    <h3>Visualización de Datos</h3>
+                                </a>
                             </div>
-                            <h3>Herramientas de Análisis</h3>
-                        </a>
-                    </div>
-                    <div class="interactivo-item">
-                        <a href="#">
-                            <div class="interactivo-image">
-                                <div class="code-repo"></div>
+                            <div class="interactivo-item">
+                                <a href="#">
+                                    <div class="interactivo-image">
+                                        <div class="data-analysis"></div>
+                                    </div>
+                                    <h3>Herramientas de Análisis</h3>
+                                </a>
                             </div>
-                            <h3>Repositorios de Código</h3>
-                        </a>
-                    </div>
+                            <div class="interactivo-item">
+                                <a href="#">
+                                    <div class="interactivo-image">
+                                        <div class="code-repo"></div>
+                                    </div>
+                                    <h3>Repositorios de Código</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
