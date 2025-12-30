@@ -645,9 +645,34 @@ a:hover {
 
 .perfil-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.perfil-info {
+    flex: 1;
+}
+
+.perfil-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.perfil-link,
+.perfil-email {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.perfil-link:hover,
+.perfil-email:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .perfil-foto {

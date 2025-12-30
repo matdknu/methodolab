@@ -3,7 +3,6 @@ const translations = {
     es: {
         // Navegación
         navPublicaciones: "Publicaciones",
-        navRecursos: "Recursos",
         navSobreNosotros: "Sobre Nosotros",
         navContacto: "Contacto",
         
@@ -40,7 +39,6 @@ const translations = {
     en: {
         // Navigation
         navPublicaciones: "Publications",
-        navRecursos: "Resources",
         navSobreNosotros: "About Us",
         navContacto: "Contact",
         
