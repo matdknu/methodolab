@@ -1,66 +1,57 @@
 // Cargar posts desde posts.json y renderizarlos
-let allPosts = [];
-let currentFilter = 'todos';
-
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('posts.json')
-        .then(response => response.json())
-        .then(posts => {
-            allPosts = posts;
-            
-            // Separar posts destacados y regulares
-            const featuredPost = posts.find(post => post.featured);
-            const regularPosts = posts.filter(post => !post.featured);
-
-            // Renderizar post destacado
-            if (featuredPost) {
-                renderFeaturedPost(featuredPost);
-            }
-
-            // Renderizar grid de posts
-            renderPostsGrid(regularPosts);
-
-            // Configurar filtro
-            setupFilter();
-        })
-        .catch(error => {
-            console.error('Error cargando posts:', error);
-            // Fallback: mostrar mensaje de error
-            document.getElementById('articulos-container').innerHTML = 
-                '<p>Error cargando publicaciones. Por favor, verifica que posts.json existe.</p>';
-        });
-});
-
-function setupFilter() {
-    const filtroSelect = document.getElementById('filtro-tipo');
-    if (filtroSelect) {
-        filtroSelect.addEventListener('change', function() {
-            currentFilter = this.value;
-            filterPosts();
-        });
-    }
-}
-
-function filterPosts() {
-    let filteredPosts = allPosts.filter(post => !post.featured);
+    // Intentar cargar desde diferentes rutas
+    const possiblePaths = [
+        'posts.json',
+        './posts.json',
+        '/posts.json'
+    ];
     
-    if (currentFilter !== 'todos') {
-        filteredPosts = filteredPosts.filter(post => post.tipo === currentFilter);
-    }
-
-    // También filtrar el destacado si aplica
-    const featuredPost = allPosts.find(post => post.featured);
-    if (featuredPost) {
-        if (currentFilter === 'todos' || featuredPost.tipo === currentFilter) {
-            renderFeaturedPost(featuredPost);
-            document.getElementById('destacado-container').style.display = 'block';
-        } else {
-            document.getElementById('destacado-container').style.display = 'none';
+    let pathIndex = 0;
+    
+    function tryFetch() {
+        if (pathIndex >= possiblePaths.length) {
+            // Si todas las rutas fallaron, mostrar error
+            console.error('Error: No se pudo cargar posts.json desde ninguna ruta');
+            document.getElementById('articulos-container').innerHTML = 
+                '<p>Error cargando publicaciones. Por favor, verifica que posts.json existe en la raíz del proyecto.</p>';
+            return;
         }
-    }
+        
+        const path = possiblePaths[pathIndex];
+        console.log('Intentando cargar desde:', path);
+        
+        fetch(path)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(posts => {
+                console.log('Posts cargados exitosamente:', posts.length);
+                
+                // Separar posts destacados y regulares
+                const featuredPost = posts.find(post => post.featured);
+                const regularPosts = posts.filter(post => !post.featured);
 
-    renderPostsGrid(filteredPosts);
-}
+                // Renderizar post destacado
+                if (featuredPost) {
+                    renderFeaturedPost(featuredPost);
+                }
+
+                // Renderizar grid de posts
+                renderPostsGrid(regularPosts);
+            })
+            .catch(error => {
+                console.error(`Error cargando desde ${path}:`, error);
+                pathIndex++;
+                tryFetch();
+            });
+    }
+    
+    tryFetch();
+});
 
 function renderFeaturedPost(post) {
     const container = document.getElementById('destacado-container');
@@ -96,7 +87,7 @@ function renderPostsGrid(posts) {
     const container = document.getElementById('articulos-container');
     
     if (posts.length === 0) {
-        container.innerHTML = '<p class="no-posts">No hay publicaciones disponibles para este filtro.</p>';
+        container.innerHTML = '<p class="no-posts">No hay publicaciones disponibles.</p>';
         return;
     }
 
