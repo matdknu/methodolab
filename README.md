@@ -49,6 +49,23 @@ php -S localhost:8000
 
 Luego visita `http://localhost:8000` en tu navegador.
 
+## Despliegue a methodolab.com
+
+El sitio está configurado para desplegarse en GitHub Pages. Para verlo en methodolab.com:
+
+1. **Habilita GitHub Pages:**
+   - Ve a Settings → Pages en tu repositorio
+   - Selecciona branch `main` y folder `/ (root)`
+   - Guarda los cambios
+
+2. **Configura el dominio personalizado:**
+   - En la misma página de Pages, agrega `methodolab.com` en Custom domain
+   - Configura los registros DNS en tu proveedor de dominio
+
+Para instrucciones detalladas, consulta [DEPLOY.md](DEPLOY.md).
+
+**URL temporal:** https://matdknu.github.io/methodolab
+
 ## Personalización
 
 ### Colores
