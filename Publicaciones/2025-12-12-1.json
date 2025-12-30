@@ -1,0 +1,12 @@
+{
+  "tipo": "difusion",
+  "category": "nacional",
+  "title": "Ejemplo de Publicación",
+  "date": "Diciembre 12, de 2025",
+  "author": "Matías Deneken",
+  "authorLink": "#",
+  "description": "Esta es una descripción de ejemplo para la publicación. Puedes escribir aquí el resumen de tu artículo.",
+  "link": "#",
+  "image": "mapa",
+  "featured": false
+}

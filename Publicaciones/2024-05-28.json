@@ -1,0 +1,12 @@
+{
+  "tipo": "academico",
+  "category": "metodología",
+  "title": "Validación cruzada en modelos de regresión para datos sociales",
+  "date": "Mayo 28, de 2024",
+  "author": "Matías Deneken",
+  "authorLink": "#",
+  "description": "Técnicas avanzadas de validación cruzada aplicadas a modelos de regresión en contextos de datos sociales con estructura compleja.",
+  "link": "#",
+  "image": "grafico",
+  "featured": false
+}

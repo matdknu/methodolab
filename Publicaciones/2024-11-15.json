@@ -1,0 +1,12 @@
+{
+  "tipo": "academico",
+  "category": "metodología",
+  "title": "Métodos de inferencia causal en estudios observacionales de ciencias sociales",
+  "date": "Noviembre 15, de 2024",
+  "author": "Matías Deneken",
+  "authorLink": "#",
+  "description": "Revisión sistemática de técnicas avanzadas para establecer relaciones causales en datos no experimentales, incluyendo matching, diferencias en diferencias y regresión discontinua.",
+  "link": "#",
+  "image": "grafico",
+  "featured": false
+}
