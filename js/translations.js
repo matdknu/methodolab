@@ -34,7 +34,7 @@ const translations = {
         // Posts
         leerMas: "Leer más →",
         por: "por",
-        verMas: "Ver más"
+        verMas: "Ver todas las publicaciones"
     },
     en: {
         // Navigation
@@ -70,7 +70,7 @@ const translations = {
         // Posts
         leerMas: "Read more →",
         por: "by",
-        verMas: "See more"
+        verMas: "See all publications"
     }
 };
 

@@ -70,12 +70,9 @@ function updateVerMasButton(totalPosts) {
     
     if (totalPosts > postsToShow) {
         verMasContainer.style.display = 'block';
-        verMasBtn.textContent = getTranslation('verMas');
-        verMasBtn.onclick = function() {
-            // Mostrar todos los posts
-            renderPostsGrid(allRegularPosts);
-            verMasContainer.style.display = 'none';
-        };
+        if (verMasBtn) {
+            verMasBtn.textContent = getTranslation('verMas');
+        }
     } else {
         verMasContainer.style.display = 'none';
     }

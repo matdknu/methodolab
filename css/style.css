@@ -491,6 +491,7 @@ a:hover {
 }
 
 .ver-mas-btn {
+    display: inline-block;
     padding: 1rem 2.5rem;
     background: #000000;
     color: #ffffff;
@@ -503,6 +504,7 @@ a:hover {
     transition: var(--transition);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    text-decoration: none;
 }
 
 .ver-mas-btn:hover {
