@@ -65,18 +65,65 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
+    gap: 3rem;
 }
 
 .logo {
-    font-family: 'Crimson Text', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        padding: 1rem 0;
+        gap: 1.5rem;
+    }
+    
+    .nav-menu {
+        gap: 1.5rem;
+    }
+    
+    .nav-right {
+        gap: 1rem;
+    }
 }
 
 .logo:hover {
     text-decoration: none;
+    opacity: 0.8;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 140px;
+    }
 }
 
 .nav-menu {

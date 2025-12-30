@@ -58,3 +58,7 @@ Puedes verificar el estado en:
 
 Algunos servidores DNS (como Frankfurt, Beijing) pueden tardar más en actualizar, pero eso es normal. La mayoría de servidores ya muestran las IPs correctas, lo cual es suficiente para que GitHub Pages verifique el dominio.
 
+
+
+
+

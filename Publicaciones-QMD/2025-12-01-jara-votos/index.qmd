@@ -1,0 +1,38 @@
+---
+title: "Los lugares donde Jara podría ir a buscar votos para la segunda vuelta"
+tipo: "difusion"
+category: "elecciones"
+date: "Diciembre 1, de 2025"
+author: "Matías Deneken"
+authorLink: "#"
+description: "Analizamos las comunas donde podrían haber más votantes potenciales comparando los resultados de las presidenciales y parlamentarias."
+link: "#"
+featured: false
+image_type: "mapa"
+image_path: "images/mapa-jara-votos.png"
+---
+
+## Resumen
+
+Este análisis examina los patrones de votación en las elecciones presidenciales y parlamentarias para identificar las comunas donde el candidato Jara podría encontrar más apoyo potencial en la segunda vuelta.
+
+## Metodología
+
+Utilizamos datos del Servicio Electoral para comparar los resultados de las elecciones presidenciales y parlamentarias, identificando comunas con patrones de votación que sugieren potencial de movilización.
+
+## Hallazgos Principales
+
+1. **Comunas del sur**: Mayor concentración de votantes potenciales
+2. **Zonas urbanas**: Alto potencial de movilización
+3. **Comunas rurales**: Oportunidades estratégicas identificadas
+
+## Visualizaciones
+
+![Mapa de comunas con potencial de votantes](images/mapa-jara-votos.png)
+
+![Análisis de resultados por región](images/grafico-regiones.png)
+
+## Conclusiones
+
+Las comunas identificadas representan oportunidades estratégicas para la campaña de segunda vuelta, con potencial de movilización basado en patrones históricos de votación.
+

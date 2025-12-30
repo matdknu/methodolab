@@ -138,3 +138,7 @@ Si después de seguir todos estos pasos el problema persiste, contacta el soport
 - Resultados de `dig methodolab.com A +short`
 - Resultados de `dig www.methodolab.com CNAME +short`
 
+
+
+
+

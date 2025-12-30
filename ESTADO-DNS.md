@@ -53,3 +53,7 @@ Debería mostrar las 4 IPs de GitHub en la mayoría de los servidores DNS:
 
 El mensaje "HTTPS unavailable" es **temporal**. Una vez que GitHub verifique el DNS, habilitará HTTPS automáticamente. Esto puede tardar hasta 24 horas después de la verificación del DNS.
 
+
+
+
+

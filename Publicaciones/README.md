@@ -77,3 +77,7 @@ python scripts/actualizar-posts.py
 - Solo puede haber un `featured: true` a la vez (el script tomará el más reciente)
 - El formato de fecha en el nombre del archivo debe ser `YYYY-MM-DD`
 
+
+
+
+

@@ -149,3 +149,7 @@ nslookup www.methodolab.com
 - ✅ El dominio raíz (`methodolab.com`) usa registros A
 - ✅ El subdominio (`www.methodolab.com`) usa CNAME
 
+
+
+
+

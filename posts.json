@@ -1,6 +1,42 @@
 [
   {
     "tipo": "difusion",
+    "category": "nacional",
+    "title": "Ejemplo de Publicación",
+    "date": "Diciembre 12, de 2025",
+    "author": "Matías Deneken",
+    "authorLink": "#",
+    "description": "Esta es una descripción de ejemplo para la publicación. Puedes escribir aquí el resumen de tu artículo.",
+    "link": "#",
+    "image": "mapa",
+    "featured": false
+  },
+  {
+    "tipo": "difusion",
+    "category": "nacional",
+    "title": "Ejemplo de Publicación",
+    "date": "Diciembre 12, de 2025",
+    "author": "Matías Deneken",
+    "authorLink": "#",
+    "description": "Esta es una descripción de ejemplo para la publicación. Puedes escribir aquí el resumen de tu artículo.",
+    "link": "#",
+    "image": "mapa",
+    "featured": false
+  },
+  {
+    "tipo": "difusion",
+    "category": "elecciones",
+    "title": "Los lugares donde Jara podría ir a buscar votos para la segunda vuelta",
+    "date": "Diciembre 1, de 2025",
+    "author": "Matías Deneken",
+    "authorLink": "#",
+    "description": "Analizamos las comunas donde podrían haber más votantes potenciales comparando los resultados de las presidenciales y parlamentarias.",
+    "link": "#",
+    "image": "mapa",
+    "featured": false
+  },
+  {
+    "tipo": "difusion",
     "category": "elecciones",
     "title": "Los lugares donde Jara podría ir a buscar votos para la segunda vuelta",
     "date": "Diciembre 1, de 2024",
@@ -9,34 +45,7 @@
     "description": "Analizamos las comunas donde podrían haber más votantes potenciales comparando los resultados de las presidenciales y parlamentarias.",
     "link": "#",
     "image": "mapa",
-    "featured": true,
-    "id": 1
-  },
-  {
-    "tipo": "difusion",
-    "category": "nacional",
-    "title": "Ejemplo de Publicación",
-    "date": "Diciembre 12, de 2025",
-    "author": "Matías Deneken",
-    "authorLink": "#",
-    "description": "Esta es una descripción de ejemplo para la publicación. Puedes escribir aquí el resumen de tu artículo.",
-    "link": "#",
-    "image": "mapa",
-    "featured": false,
-    "id": 2
-  },
-  {
-    "tipo": "difusion",
-    "category": "nacional",
-    "title": "Ejemplo de Publicación",
-    "date": "Diciembre 12, de 2025",
-    "author": "Matías Deneken",
-    "authorLink": "#",
-    "description": "Esta es una descripción de ejemplo para la publicación. Puedes escribir aquí el resumen de tu artículo.",
-    "link": "#",
-    "image": "mapa",
-    "featured": false,
-    "id": 3
+    "featured": true
   },
   {
     "tipo": "academico",
@@ -48,8 +57,7 @@
     "description": "Revisión sistemática de técnicas avanzadas para establecer relaciones causales en datos no experimentales, incluyendo matching, diferencias en diferencias y regresión discontinua.",
     "link": "#",
     "image": "grafico",
-    "featured": false,
-    "id": 4
+    "featured": false
   },
   {
     "tipo": "academico",
@@ -61,8 +69,7 @@
     "description": "Evaluación comparativa de algoritmos de aprendizaje automático para predecir variables sociales complejas a partir de datos de encuestas.",
     "link": "#",
     "image": "datos",
-    "featured": false,
-    "id": 5
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -74,8 +81,7 @@
     "description": "Una mirada detallada a los datos nos dice que los habitantes migran a comunas más al sur que las de origen.",
     "link": "#",
     "image": "mapa",
-    "featured": false,
-    "id": 6
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -87,8 +93,7 @@
     "description": "Análisis de la representación de mujeres en carreras de ciencia, tecnología, ingeniería y matemáticas en universidades chilenas.",
     "link": "#",
     "image": "grafico",
-    "featured": false,
-    "id": 7
+    "featured": false
   },
   {
     "tipo": "academico",
@@ -100,8 +105,7 @@
     "description": "Metodología para identificar y aprovechar experimentos naturales en estudios de ciencias sociales, con aplicaciones en políticas públicas.",
     "link": "#",
     "image": "mapa",
-    "featured": false,
-    "id": 8
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -113,8 +117,7 @@
     "description": "Análisis de datos de movilidad para entender cómo cambió el comportamiento de desplazamiento en las principales ciudades de Chile.",
     "link": "#",
     "image": "datos",
-    "featured": false,
-    "id": 9
+    "featured": false
   },
   {
     "tipo": "academico",
@@ -126,8 +129,7 @@
     "description": "Técnicas avanzadas de validación cruzada aplicadas a modelos de regresión en contextos de datos sociales con estructura compleja.",
     "link": "#",
     "image": "grafico",
-    "featured": false,
-    "id": 10
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -139,8 +141,7 @@
     "description": "Exploración de los patrones espaciales de pobreza utilizando datos del Censo y encuestas de hogares para identificar áreas de mayor concentración.",
     "link": "#",
     "image": "mapa",
-    "featured": false,
-    "id": 11
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -152,8 +153,7 @@
     "description": "La mayoría del estudiantado en las universidades proviene de colegios particulares subvencionados, pero un grupo de 6 universidades se sale de la norma.",
     "link": "#",
     "image": "grafico",
-    "featured": false,
-    "id": 12
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -165,8 +165,7 @@
     "description": "Análisis de los resultados electorales para evaluar el impacto de las cuotas de género en la representación política a nivel municipal.",
     "link": "#",
     "image": "mapa",
-    "featured": false,
-    "id": 13
+    "featured": false
   },
   {
     "tipo": "academico",
@@ -178,8 +177,7 @@
     "description": "Aplicación de análisis de redes sociales para estudiar la difusión de información y comportamientos en grupos sociales.",
     "link": "#",
     "image": "datos",
-    "featured": false,
-    "id": 14
+    "featured": false
   },
   {
     "tipo": "academico",
@@ -191,8 +189,7 @@
     "description": "24 horas no alcanzan igual para todos: así se reparte el tiempo entre mujeres y hombres.",
     "link": "#",
     "image": "datos",
-    "featured": false,
-    "id": 15
+    "featured": false
   },
   {
     "tipo": "difusion",
@@ -204,8 +201,7 @@
     "description": "Análisis de las barreras de acceso a la educación superior según nivel socioeconómico y tipo de establecimiento de origen.",
     "link": "#",
     "image": "grafico",
-    "featured": false,
-    "id": 16
+    "featured": false
   },
   {
     "tipo": "academico",
@@ -217,7 +213,6 @@
     "description": "Aplicación de métodos bayesianos para el análisis de datos longitudinales en estudios de ciencias sociales con múltiples mediciones temporales.",
     "link": "#",
     "image": "mapa",
-    "featured": false,
-    "id": 17
+    "featured": false
   }
 ]

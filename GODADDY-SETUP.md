@@ -101,3 +101,7 @@ La interfaz de GoDaddy puede variar, pero busca:
 - Botón para **Agregar** o **Añadir registro**
 - Campos: Tipo, Nombre/Host, Valor/Puntos a, TTL
 
+
+
+
+

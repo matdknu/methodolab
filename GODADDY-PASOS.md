@@ -74,3 +74,7 @@ NS    | @    | ns18.domaincontrol.com.  | 1 Hour
 
 ¡Listo! Espera 15 minutos a 2 horas para que los cambios se propaguen.
 
+
+
+
+

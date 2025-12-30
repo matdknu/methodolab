@@ -70,3 +70,7 @@ Si después de eliminar el registro A para www sigues viendo el error:
 2. Verifica que el registro A para www haya sido eliminado
 3. Intenta agregar el CNAME nuevamente
 
+
+
+
+
