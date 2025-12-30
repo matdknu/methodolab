@@ -17,16 +17,28 @@
                 <div class="nav-content">
                     <a href="/" class="logo">Methodolab</a>
                     <ul class="nav-menu">
-                        <li><a href="#publicaciones">Publicaciones</a></li>
-                        <li><a href="#recursos">Recursos</a></li>
-                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#publicaciones" data-translate="navPublicaciones">Publicaciones</a></li>
+                        <li><a href="#recursos" data-translate="navRecursos">Recursos</a></li>
+                        <li><a href="#sobre-nosotros" data-translate="navSobreNosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto" data-translate="navContacto">Contacto</a></li>
                     </ul>
-                    <button class="menu-toggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <div class="nav-right">
+                        <div class="lang-selector">
+                            <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
+                                <span class="flag">🇨🇱</span>
+                                <span class="lang-code">ESP</span>
+                            </button>
+                            <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+                                <span class="flag">🇬🇧</span>
+                                <span class="lang-code">ENG</span>
+                            </button>
+                        </div>
+                        <button class="menu-toggle" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -37,7 +49,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">Methodolab</h1>
-                    <p class="hero-subtitle">Metodología en Ciencias Sociales</p>
+                    <p class="hero-subtitle" data-translate="heroSubtitle">Metodología en Ciencias Sociales</p>
                 </div>
             </div>
         </section>
@@ -55,14 +67,14 @@
                     </div>
                     
                     <aside class="interactivos-sidebar">
-                        <h2 class="sidebar-title">Interactivos</h2>
+                        <h2 class="sidebar-title" data-translate="interactivosTitle">Interactivos</h2>
                         <div class="interactivos-list">
                             <div class="interactivo-item">
                                 <a href="#">
                                     <div class="interactivo-image">
                                         <div class="data-visualization"></div>
                                     </div>
-                                    <h3>Visualización de Datos</h3>
+                                    <h3 data-translate="interactivo1">Visualización de Datos</h3>
                                 </a>
                             </div>
                             <div class="interactivo-item">
@@ -70,7 +82,7 @@
                                     <div class="interactivo-image">
                                         <div class="data-analysis"></div>
                                     </div>
-                                    <h3>Herramientas de Análisis</h3>
+                                    <h3 data-translate="interactivo2">Herramientas de Análisis</h3>
                                 </a>
                             </div>
                             <div class="interactivo-item">
@@ -78,7 +90,7 @@
                                     <div class="interactivo-image">
                                         <div class="code-repo"></div>
                                     </div>
-                                    <h3>Repositorios de Código</h3>
+                                    <h3 data-translate="interactivo3">Repositorios de Código</h3>
                                 </a>
                             </div>
                         </div>
@@ -90,11 +102,11 @@
         <section id="sobre-nosotros" class="mision">
             <div class="container">
                 <div class="mision-content">
-                    <h2>Nosotros</h2>
+                    <h2 data-translate="nosotrosTitle">Nosotros</h2>
                     <div class="nosotros-info">
-                        <h3>Matías Deneken</h3>
+                        <h3 data-translate="nosotrosName">Matías Deneken</h3>
                         <div class="biografia">
-                            <p>
+                            <p data-translate="nosotrosBio1">
                                 Matías Deneken es investigador en metodología de ciencias sociales, 
                                 especializado en el desarrollo y aplicación de técnicas avanzadas para 
                                 el análisis de datos sociales. Su trabajo se centra en la intersección 
@@ -102,20 +114,20 @@
                                 sociales, con énfasis en inferencia causal, análisis de datos complejos 
                                 y visualización de información.
                             </p>
-                            <p>
+                            <p data-translate="nosotrosBio2">
                                 A través de Methodolab, dirige proyectos de investigación que combinan 
                                 rigor metodológico con aplicaciones prácticas, desarrollando herramientas 
                                 y técnicas que permiten abordar preguntas de investigación complejas. 
                                 Su investigación abarca temas como análisis de elecciones, migración 
                                 interna, desigualdades sociales y metodologías experimentales.
                             </p>
-                            <p>
+                            <p data-translate="nosotrosBio3">
                                 Además de su trabajo de investigación, Matías se dedica a la difusión 
                                 de metodologías avanzadas a través de publicaciones académicas y de 
                                 divulgación, así como al desarrollo de software y herramientas 
                                 computacionales para facilitar el análisis de datos sociales.
                             </p>
-                            <p>
+                            <p data-translate="nosotrosBio4">
                                 Methodolab es un laboratorio de metodología en ciencias sociales que 
                                 busca analizar y desarrollar metodologías avanzadas para la investigación, 
                                 combinando rigor metodológico con aplicaciones prácticas en problemas 
@@ -130,8 +142,8 @@
         <section id="contacto" class="contacto">
             <div class="container">
                 <div class="contacto-content">
-                    <h2>Contacto</h2>
-                    <p>
+                    <h2 data-translate="contactoTitle">Contacto</h2>
+                    <p data-translate="contactoText">
                         ¿Te gustaría colaborar con nosotros? ¿Tienes alguna duda o comentario? 
                         ¡Escríbenos!
                     </p>
@@ -145,10 +157,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Methodolab. Todos los derechos reservados.</p>
+            <p data-translate="footerText">&copy; 2024 Methodolab. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/posts-data.js"></script>
     <script src="js/posts-loader.js"></script>
     <script src="js/main.js"></script>

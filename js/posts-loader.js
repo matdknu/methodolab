@@ -1,5 +1,18 @@
 // Cargar posts desde posts.json y renderizarlos
+// Asegurar que las traducciones estén disponibles
 document.addEventListener('DOMContentLoaded', function() {
+    // Re-renderizar posts cuando cambie el idioma
+    if (typeof window.languageChangeCallback === 'undefined') {
+        window.languageChangeCallback = function() {
+            // Re-cargar y renderizar posts con nuevo idioma
+            if (window.allPosts && window.allPosts.length > 0) {
+                const featuredPost = window.allPosts.find(post => post.featured);
+                const regularPosts = window.allPosts.filter(post => !post.featured);
+                if (featuredPost) renderFeaturedPost(featuredPost);
+                renderPostsGrid(regularPosts);
+            }
+        };
+    }
     // Intentar cargar desde posts.json primero
     fetch('posts.json')
         .then(response => {
@@ -10,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(posts => {
             console.log('Posts cargados desde posts.json:', posts.length);
+            window.allPosts = posts;
             renderPosts(posts);
         })
         .catch(error => {
@@ -17,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Usar datos embebidos como respaldo
             if (typeof postsData !== 'undefined') {
                 console.log('Usando postsData embebido:', postsData.length);
+                window.allPosts = postsData;
                 renderPosts(postsData);
             } else {
                 console.error('No hay datos de posts disponibles');
@@ -58,12 +73,12 @@ function renderFeaturedPost(post) {
                         ${tipoLabel}
                     </h2>
                     <p class="destacado-meta">
-                        ${post.date} por <a href="${post.authorLink}">${post.author}</a>
+                        ${post.date} ${getTranslation('por')} <a href="${post.authorLink}">${post.author}</a>
                     </p>
                     <p class="destacado-description">
                         ${post.description}
                     </p>
-                    <a href="${post.link}" class="destacado-link">Leer más →</a>
+                    <a href="${post.link}" class="destacado-link">${getTranslation('leerMas')}</a>
                 </div>
             </div>
         </div>
@@ -92,7 +107,7 @@ function renderPostsGrid(posts) {
                     ${tipoLabel}
                 </h3>
                 <p class="articulo-meta">
-                    ${post.date} por <a href="${post.authorLink}">${post.author}</a>
+                    ${post.date} ${getTranslation('por')} <a href="${post.authorLink}">${post.author}</a>
                 </p>
                 <p class="articulo-description">
                     ${post.description}
@@ -121,4 +136,16 @@ function getTipoLabel(tipo) {
     };
     
     return labels[tipo] || '';
+}
+
+function getTranslation(key) {
+    const lang = localStorage.getItem('language') || 'es';
+    if (typeof translations !== 'undefined' && translations[lang] && translations[lang][key]) {
+        return translations[lang][key];
+    }
+    // Fallback a español
+    if (translations && translations.es && translations.es[key]) {
+        return translations.es[key];
+    }
+    return key;
 }
