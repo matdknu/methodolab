@@ -529,10 +529,14 @@ a:hover {
 
 .nosotros-info h3 {
     font-family: 'Crimson Text', serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--text);
+}
+
+.biografia {
+    margin-top: 1.5rem;
 }
 
 .mision-content p {
