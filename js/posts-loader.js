@@ -65,19 +65,19 @@ function filterPosts() {
 function renderFeaturedPost(post) {
     const container = document.getElementById('destacado-container');
     const imageClass = getImageClass(post.image);
-    const tipoBadge = getTipoBadge(post.tipo);
+    const tipoLabel = getTipoLabel(post.tipo);
     
     container.innerHTML = `
         <div class="destacado">
             <div class="destacado-content">
                 <div class="destacado-image">
                     <div class="${imageClass}"></div>
-                    ${tipoBadge}
                 </div>
                 <div class="destacado-text">
                     <span class="destacado-category">${post.category}</span>
                     <h2 class="destacado-title">
                         <a href="${post.link}">${post.title}</a>
+                        ${tipoLabel}
                     </h2>
                     <p class="destacado-meta">
                         ${post.date} por <a href="${post.authorLink}">${post.author}</a>
@@ -102,16 +102,16 @@ function renderPostsGrid(posts) {
 
     container.innerHTML = posts.map(post => {
         const imageClass = getImageClass(post.image);
-        const tipoBadge = getTipoBadge(post.tipo);
+        const tipoLabel = getTipoLabel(post.tipo);
         return `
             <article class="articulo-item" data-tipo="${post.tipo}">
                 <div class="articulo-image">
                     <div class="${imageClass}"></div>
-                    ${tipoBadge}
                 </div>
                 <span class="articulo-category">${post.category}</span>
                 <h3 class="articulo-title">
                     <a href="${post.link}">${post.title}</a>
+                    ${tipoLabel}
                 </h3>
                 <p class="articulo-meta">
                     ${post.date} por <a href="${post.authorLink}">${post.author}</a>
@@ -134,13 +134,13 @@ function getImageClass(imageType) {
     return imageClasses[imageType] || imageClasses['default'];
 }
 
-function getTipoBadge(tipo) {
+function getTipoLabel(tipo) {
     if (!tipo) return '';
     
-    const badges = {
-        'difusion': '<span class="tipo-badge tipo-difusion">MethodoLab - Difusión</span>',
-        'academico': '<span class="tipo-badge tipo-academico">MethodoLab - Académico</span>'
+    const labels = {
+        'difusion': '<span class="tipo-label tipo-difusion">Difusión</span>',
+        'academico': '<span class="tipo-label tipo-academico">Académico</span>'
     };
     
-    return badges[tipo] || '';
+    return labels[tipo] || '';
 }
