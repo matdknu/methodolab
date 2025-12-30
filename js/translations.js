@@ -109,19 +109,16 @@ function updatePageLanguage() {
         }
     });
     
-    // Actualizar selector de idioma
-    const langSelector = document.querySelector('.lang-selector');
-    if (langSelector) {
-        const currentFlag = langSelector.querySelector('.current-flag');
-        const currentLang = langSelector.querySelector('.current-lang');
-        if (currentLanguage === 'es') {
-            currentFlag.textContent = '🇨🇱';
-            currentLang.textContent = 'ESP';
-        } else {
-            currentFlag.textContent = '🇬🇧';
-            currentLang.textContent = 'ENG';
+    // Actualizar selector de idioma - marcar botón activo
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        btn.classList.remove('active');
+        const onclick = btn.getAttribute('onclick') || '';
+        const lang = onclick.includes("'es'") ? 'es' : onclick.includes("'en'") ? 'en' : null;
+        if (lang === currentLanguage) {
+            btn.classList.add('active');
         }
-    }
+    });
 }
 
 // Inicializar cuando se carga la página
