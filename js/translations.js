@@ -34,7 +34,10 @@ const translations = {
         // Posts
         leerMas: "Leer más →",
         por: "por",
-        verMas: "Ver todas las publicaciones"
+        verMas: "Ver todas las publicaciones",
+        
+        // Botones
+        btnSobreNosotros: "Sobre Nosotros"
     },
     en: {
         // Navigation
@@ -70,7 +73,10 @@ const translations = {
         // Posts
         leerMas: "Read more →",
         por: "by",
-        verMas: "See all publications"
+        verMas: "See all publications",
+        
+        // Botones
+        btnSobreNosotros: "About Us"
     }
 };
 
