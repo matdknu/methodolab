@@ -12,6 +12,7 @@ Cada post en `posts.json` tiene la siguiente estructura:
 {
   "id": 1,
   "featured": true,
+  "tipo": "difusion",
   "category": "investigación",
   "title": "Título del Post",
   "date": "Diciembre 15, de 2024",
@@ -27,6 +28,7 @@ Cada post en `posts.json` tiene la siguiente estructura:
 
 - **id**: Número único para cada post (incrementa para cada nuevo post)
 - **featured**: `true` si quieres que aparezca como post destacado (solo uno puede ser destacado)
+- **tipo**: Tipo de publicación - **"difusion"** para "MethodoLab - Difusión" o **"academico"** para "MethodoLab - Académico"
 - **category**: Categoría del post (ej: "investigación", "metodología", "análisis", "herramientas")
 - **title**: Título del post
 - **date**: Fecha en formato "Mes día, de año" (ej: "Diciembre 15, de 2024")
@@ -35,6 +37,14 @@ Cada post en `posts.json` tiene la siguiente estructura:
 - **description**: Descripción breve que aparece debajo del título
 - **link**: URL del post completo (usa "#" si aún no está listo)
 - **image**: Tipo de imagen ("mapa", "grafico", o "datos")
+
+## Tipos de Publicaciones
+
+Cada post debe tener un tipo:
+- **"difusion"**: Aparece con badge azul "MethodoLab - Difusión"
+- **"academico"**: Aparece con badge gris "MethodoLab - Académico"
+
+Los usuarios pueden filtrar las publicaciones por tipo usando el menú desplegable en la sección de publicaciones.
 
 ## Tipos de Imágenes
 
@@ -53,6 +63,7 @@ Puedes usar tres tipos de imágenes:
 {
   "id": 8,
   "featured": false,
+  "tipo": "difusion",
   "category": "análisis",
   "title": "Nuevo Análisis de Datos Sociales",
   "date": "Enero 10, de 2025",
@@ -98,6 +109,7 @@ Asegúrate de que el JSON sea válido:
   {
     "id": 1,
     "featured": true,
+    "tipo": "difusion",
     "category": "investigación",
     "title": "Post Destacado",
     "date": "Diciembre 15, de 2024",
@@ -110,6 +122,7 @@ Asegúrate de que el JSON sea válido:
   {
     "id": 2,
     "featured": false,
+    "tipo": "academico",
     "category": "metodología",
     "title": "Otro Post",
     "date": "Noviembre 20, de 2024",
