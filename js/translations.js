@@ -18,7 +18,9 @@ const translations = {
         
         // Nosotros
         nosotrosTitle: "Nosotros",
+        nosotrosIntro: "Methodolab es un laboratorio de metodología en ciencias sociales dedicado al desarrollo y aplicación de técnicas avanzadas para la investigación empírica.",
         nosotrosName: "Matías Deneken",
+        perfilCargo: "Investigador en Metodología de Ciencias Sociales",
         nosotrosBio1: "Matías Deneken es investigador en metodología de ciencias sociales, especializado en el desarrollo y aplicación de técnicas avanzadas para el análisis de datos sociales. Su trabajo se centra en la intersección entre la metodología cuantitativa, el análisis de datos y las ciencias sociales, con énfasis en inferencia causal, análisis de datos complejos y visualización de información.",
         nosotrosBio2: "A través de Methodolab, dirige proyectos de investigación que combinan rigor metodológico con aplicaciones prácticas, desarrollando herramientas y técnicas que permiten abordar preguntas de investigación complejas. Su investigación abarca temas como análisis de elecciones, migración interna, desigualdades sociales y metodologías experimentales.",
         nosotrosBio3: "Además de su trabajo de investigación, Matías se dedica a la difusión de metodologías avanzadas a través de publicaciones académicas y de divulgación, así como al desarrollo de software y herramientas computacionales para facilitar el análisis de datos sociales.",
@@ -54,7 +56,9 @@ const translations = {
         
         // Nosotros
         nosotrosTitle: "About Us",
+        nosotrosIntro: "Methodolab is a social science methodology laboratory dedicated to the development and application of advanced techniques for empirical research.",
         nosotrosName: "Matías Deneken",
+        perfilCargo: "Researcher in Social Science Methodology",
         nosotrosBio1: "Matías Deneken is a researcher in social science methodology, specialized in the development and application of advanced techniques for social data analysis. His work focuses on the intersection between quantitative methodology, data analysis and social sciences, with emphasis on causal inference, complex data analysis and information visualization.",
         nosotrosBio2: "Through Methodolab, he directs research projects that combine methodological rigor with practical applications, developing tools and techniques that allow addressing complex research questions. His research covers topics such as election analysis, internal migration, social inequalities and experimental methodologies.",
         nosotrosBio3: "In addition to his research work, Matías is dedicated to the dissemination of advanced methodologies through academic and outreach publications, as well as the development of software and computational tools to facilitate social data analysis.",

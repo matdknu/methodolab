@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matías Deneken - Perfil">
+    <title>Matías Deneken | Methodolab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="/" class="logo">Methodolab</a>
+                    <ul class="nav-menu">
+                        <li><a href="index.html#publicaciones" data-translate="navPublicaciones">Publicaciones</a></li>
+                        <li><a href="index.html#recursos" data-translate="navRecursos">Recursos</a></li>
+                        <li><a href="nosotros.html" data-translate="navSobreNosotros">Sobre Nosotros</a></li>
+                        <li><a href="index.html#contacto" data-translate="navContacto">Contacto</a></li>
+                    </ul>
+                    <div class="nav-right">
+                        <div class="lang-selector">
+                            <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
+                                <span class="flag">🇨🇱</span>
+                                <span class="lang-code">ESP</span>
+                            </button>
+                            <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+                                <span class="flag">🇬🇧</span>
+                                <span class="lang-code">ENG</span>
+                            </button>
+                        </div>
+                        <button class="menu-toggle" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Matías Deneken</h1>
+                    <p class="hero-subtitle" data-translate="heroSubtitle">Metodología en Ciencias Sociales</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mision">
+            <div class="container">
+                <div class="mision-content">
+                    <div class="perfil-completo">
+                        <div class="perfil-foto-grande">
+                            <div class="foto-placeholder foto-large">
+                                <span class="foto-iniciales">MD</span>
+                            </div>
+                        </div>
+                        <div class="perfil-detalle">
+                            <h2 data-translate="nosotrosName">Matías Deneken</h2>
+                            <p class="perfil-cargo" data-translate="perfilCargo">Investigador en Metodología de Ciencias Sociales</p>
+                            <div class="biografia">
+                                <p data-translate="nosotrosBio1">
+                                    Matías Deneken es investigador en metodología de ciencias sociales, 
+                                    especializado en el desarrollo y aplicación de técnicas avanzadas para 
+                                    el análisis de datos sociales. Su trabajo se centra en la intersección 
+                                    entre la metodología cuantitativa, el análisis de datos y las ciencias 
+                                    sociales, con énfasis en inferencia causal, análisis de datos complejos 
+                                    y visualización de información.
+                                </p>
+                                <p data-translate="nosotrosBio2">
+                                    A través de Methodolab, dirige proyectos de investigación que combinan 
+                                    rigor metodológico con aplicaciones prácticas, desarrollando herramientas 
+                                    y técnicas que permiten abordar preguntas de investigación complejas. 
+                                    Su investigación abarca temas como análisis de elecciones, migración 
+                                    interna, desigualdades sociales y metodologías experimentales.
+                                </p>
+                                <p data-translate="nosotrosBio3">
+                                    Además de su trabajo de investigación, Matías se dedica a la difusión 
+                                    de metodologías avanzadas a través de publicaciones académicas y de 
+                                    divulgación, así como al desarrollo de software y herramientas 
+                                    computacionales para facilitar el análisis de datos sociales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-translate="footerText">&copy; 2024 Methodolab. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
