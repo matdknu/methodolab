@@ -45,6 +45,16 @@
         <!-- Publicaciones se cargan aquí desde posts.json -->
         <section id="publicaciones" class="publicaciones">
             <div class="container">
+                <!-- Filtro de tipos -->
+                <div class="filtro-tipos">
+                    <label for="filtro-tipo" class="filtro-label">Filtrar por tipo:</label>
+                    <select id="filtro-tipo" class="filtro-select">
+                        <option value="todos">Todos</option>
+                        <option value="difusion">MethodoLab - Difusión</option>
+                        <option value="academico">MethodoLab - Académico</option>
+                    </select>
+                </div>
+                
                 <!-- Destacado se carga aquí -->
                 <div id="destacado-container"></div>
                 

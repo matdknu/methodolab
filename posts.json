@@ -2,6 +2,7 @@
   {
     "id": 1,
     "featured": true,
+    "tipo": "difusion",
     "category": "investigación",
     "title": "Metodologías Avanzadas para el Análisis de Datos Sociales",
     "date": "Diciembre 15, de 2024",
@@ -14,6 +15,7 @@
   {
     "id": 2,
     "featured": false,
+    "tipo": "academico",
     "category": "metodología",
     "title": "Herramientas Computacionales para Investigación Social",
     "date": "Noviembre 20, de 2024",
@@ -26,6 +28,7 @@
   {
     "id": 3,
     "featured": false,
+    "tipo": "difusion",
     "category": "análisis",
     "title": "Técnicas de Visualización de Datos Sociales",
     "date": "Octubre 10, de 2024",
@@ -38,6 +41,7 @@
   {
     "id": 4,
     "featured": false,
+    "tipo": "academico",
     "category": "metodología",
     "title": "Diseño Experimental en Ciencias Sociales",
     "date": "Septiembre 5, de 2024",
@@ -50,6 +54,7 @@
   {
     "id": 5,
     "featured": false,
+    "tipo": "difusion",
     "category": "herramientas",
     "title": "Paquetes R para Análisis de Datos Sociales",
     "date": "Agosto 18, de 2024",
@@ -62,6 +67,7 @@
   {
     "id": 6,
     "featured": false,
+    "tipo": "academico",
     "category": "análisis",
     "title": "Machine Learning en Investigación Social",
     "date": "Julio 22, de 2024",
@@ -74,6 +80,7 @@
   {
     "id": 7,
     "featured": false,
+    "tipo": "difusion",
     "category": "metodología",
     "title": "Análisis Causal en Estudios Observacionales",
     "date": "Junio 8, de 2024",
@@ -84,4 +91,3 @@
     "image": "mapa"
   }
 ]
-

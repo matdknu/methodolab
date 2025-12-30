@@ -1,8 +1,13 @@
 // Cargar posts desde posts.json y renderizarlos
+let allPosts = [];
+let currentFilter = 'todos';
+
 document.addEventListener('DOMContentLoaded', function() {
     fetch('posts.json')
         .then(response => response.json())
         .then(posts => {
+            allPosts = posts;
+            
             // Separar posts destacados y regulares
             const featuredPost = posts.find(post => post.featured);
             const regularPosts = posts.filter(post => !post.featured);
@@ -14,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Renderizar grid de posts
             renderPostsGrid(regularPosts);
+
+            // Configurar filtro
+            setupFilter();
         })
         .catch(error => {
             console.error('Error cargando posts:', error);
@@ -23,15 +31,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
+function setupFilter() {
+    const filtroSelect = document.getElementById('filtro-tipo');
+    if (filtroSelect) {
+        filtroSelect.addEventListener('change', function() {
+            currentFilter = this.value;
+            filterPosts();
+        });
+    }
+}
+
+function filterPosts() {
+    let filteredPosts = allPosts.filter(post => !post.featured);
+    
+    if (currentFilter !== 'todos') {
+        filteredPosts = filteredPosts.filter(post => post.tipo === currentFilter);
+    }
+
+    // También filtrar el destacado si aplica
+    const featuredPost = allPosts.find(post => post.featured);
+    if (featuredPost) {
+        if (currentFilter === 'todos' || featuredPost.tipo === currentFilter) {
+            renderFeaturedPost(featuredPost);
+            document.getElementById('destacado-container').style.display = 'block';
+        } else {
+            document.getElementById('destacado-container').style.display = 'none';
+        }
+    }
+
+    renderPostsGrid(filteredPosts);
+}
+
 function renderFeaturedPost(post) {
     const container = document.getElementById('destacado-container');
     const imageClass = getImageClass(post.image);
+    const tipoBadge = getTipoBadge(post.tipo);
     
     container.innerHTML = `
         <div class="destacado">
             <div class="destacado-content">
                 <div class="destacado-image">
                     <div class="${imageClass}"></div>
+                    ${tipoBadge}
                 </div>
                 <div class="destacado-text">
                     <span class="destacado-category">${post.category}</span>
@@ -55,16 +96,18 @@ function renderPostsGrid(posts) {
     const container = document.getElementById('articulos-container');
     
     if (posts.length === 0) {
-        container.innerHTML = '<p>No hay publicaciones disponibles.</p>';
+        container.innerHTML = '<p class="no-posts">No hay publicaciones disponibles para este filtro.</p>';
         return;
     }
 
     container.innerHTML = posts.map(post => {
         const imageClass = getImageClass(post.image);
+        const tipoBadge = getTipoBadge(post.tipo);
         return `
-            <article class="articulo-item">
+            <article class="articulo-item" data-tipo="${post.tipo}">
                 <div class="articulo-image">
                     <div class="${imageClass}"></div>
+                    ${tipoBadge}
                 </div>
                 <span class="articulo-category">${post.category}</span>
                 <h3 class="articulo-title">
@@ -91,3 +134,13 @@ function getImageClass(imageType) {
     return imageClasses[imageType] || imageClasses['default'];
 }
 
+function getTipoBadge(tipo) {
+    if (!tipo) return '';
+    
+    const badges = {
+        'difusion': '<span class="tipo-badge tipo-difusion">MethodoLab - Difusión</span>',
+        'academico': '<span class="tipo-badge tipo-academico">MethodoLab - Académico</span>'
+    };
+    
+    return badges[tipo] || '';
+}
