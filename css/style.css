@@ -166,6 +166,119 @@ a:hover {
     border: 1px solid var(--border);
 }
 
+/* Imágenes de datos - Mapas, Gráficos, Datos */
+.image-mapa,
+.image-grafico,
+.image-datos {
+    width: 100%;
+    padding-top: 75%;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.image-mapa::before,
+.image-grafico::before,
+.image-datos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+/* Mapa - Patrón de mapa con líneas */
+.image-mapa::before {
+    background-image: 
+        linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+        radial-gradient(circle at 30% 40%, #4a90e2 2px, transparent 2px),
+        radial-gradient(circle at 70% 60%, #e24a4a 2px, transparent 2px),
+        radial-gradient(circle at 50% 80%, #4ae2a0 2px, transparent 2px);
+    background-size: 20px 20px, 20px 20px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* Gráfico - Patrón de barras y líneas */
+.image-grafico::before {
+    background-image: 
+        linear-gradient(90deg, transparent 0%, rgba(74, 144, 226, 0.3) 10%, rgba(74, 144, 226, 0.3) 15%, transparent 15%),
+        linear-gradient(90deg, transparent 20%, rgba(74, 144, 226, 0.4) 25%, rgba(74, 144, 226, 0.4) 30%, transparent 30%),
+        linear-gradient(90deg, transparent 40%, rgba(74, 144, 226, 0.5) 45%, rgba(74, 144, 226, 0.5) 50%, transparent 50%),
+        linear-gradient(90deg, transparent 60%, rgba(74, 144, 226, 0.6) 65%, rgba(74, 144, 226, 0.6) 70%, transparent 70%),
+        linear-gradient(90deg, transparent 80%, rgba(74, 144, 226, 0.7) 85%, rgba(74, 144, 226, 0.7) 90%, transparent 90%);
+    background-size: 100% 100%;
+    background-position: bottom;
+}
+
+/* Datos - Patrón de puntos y líneas */
+.image-datos::before {
+    background-image: 
+        radial-gradient(circle at 20% 30%, #666 1px, transparent 1px),
+        radial-gradient(circle at 40% 50%, #666 1px, transparent 1px),
+        radial-gradient(circle at 60% 40%, #666 1px, transparent 1px),
+        radial-gradient(circle at 80% 60%, #666 1px, transparent 1px),
+        linear-gradient(135deg, transparent 40%, rgba(102, 102, 102, 0.2) 45%, rgba(102, 102, 102, 0.2) 55%, transparent 60%);
+    background-size: 100% 100%;
+}
+
+/* Imágenes para interactivos */
+.data-visualization,
+.data-analysis,
+.code-repo {
+    width: 100%;
+    padding-top: 100%;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.data-visualization::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, rgba(74, 144, 226, 0.1) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(74, 144, 226, 0.1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(74, 144, 226, 0.1) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(74, 144, 226, 0.1) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.data-analysis::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(102, 102, 102, 0.1) 2px, rgba(102, 102, 102, 0.1) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(102, 102, 102, 0.1) 2px, rgba(102, 102, 102, 0.1) 4px);
+}
+
+.code-repo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
 .destacado-text {
     max-width: 600px;
 }
@@ -225,10 +338,15 @@ a:hover {
     color: var(--text-light);
 }
 
-/* Artículos */
-.articulos {
+/* Publicaciones - Sección principal */
+.publicaciones {
     padding: 4rem 0;
     border-bottom: 1px solid var(--border);
+}
+
+/* Artículos */
+.articulos {
+    padding: 0;
 }
 
 .articulos-grid {
@@ -239,6 +357,17 @@ a:hover {
 
 .articulo-item {
     max-width: 500px;
+}
+
+.articulo-image {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.articulo-image .image-mapa,
+.articulo-image .image-grafico,
+.articulo-image .image-datos {
+    padding-top: 60%;
 }
 
 .articulo-category {

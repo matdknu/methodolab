@@ -17,10 +17,10 @@
                 <div class="nav-content">
                     <a href="/" class="logo">Methodolab</a>
                     <ul class="nav-menu">
-                        <li><a href="#investigacion">Investigación</a></li>
                         <li><a href="#publicaciones">Publicaciones</a></li>
                         <li><a href="#recursos">Recursos</a></li>
                         <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                     <button class="menu-toggle" aria-label="Toggle menu">
                         <span></span>
@@ -42,118 +42,14 @@
             </div>
         </section>
 
-        <section class="destacado">
+        <!-- Publicaciones se cargan aquí desde posts.json -->
+        <section id="publicaciones" class="publicaciones">
             <div class="container">
-                <div class="destacado-content">
-                    <div class="destacado-image">
-                        <div class="image-placeholder"></div>
-                    </div>
-                    <div class="destacado-text">
-                        <span class="destacado-category">investigación</span>
-                        <h2 class="destacado-title">
-                            <a href="#">Metodologías Avanzadas para el Análisis de Datos Sociales</a>
-                        </h2>
-                        <p class="destacado-meta">
-                            Diciembre 15, de 2024 por <a href="#">Equipo Methodolab</a>
-                        </p>
-                        <p class="destacado-description">
-                            Desarrollamos técnicas innovadoras para el análisis de datos sociales, 
-                            combinando rigor metodológico con aplicaciones prácticas en investigación 
-                            empírica.
-                        </p>
-                        <a href="#" class="destacado-link">Leer más →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="articulos">
-            <div class="container">
-                <div class="articulos-grid">
-                    <article class="articulo-item">
-                        <span class="articulo-category">metodología</span>
-                        <h3 class="articulo-title">
-                            <a href="#">Herramientas Computacionales para Investigación Social</a>
-                        </h3>
-                        <p class="articulo-meta">
-                            Noviembre 20, de 2024 por <a href="#">Autor(es)</a>
-                        </p>
-                        <p class="articulo-description">
-                            Desarrollo de software y herramientas open-source para facilitar 
-                            el análisis de datos y la investigación metodológica.
-                        </p>
-                    </article>
-
-                    <article class="articulo-item">
-                        <span class="articulo-category">análisis</span>
-                        <h3 class="articulo-title">
-                            <a href="#">Técnicas de Visualización de Datos Sociales</a>
-                        </h3>
-                        <p class="articulo-meta">
-                            Octubre 10, de 2024 por <a href="#">Autor(es)</a>
-                        </p>
-                        <p class="articulo-description">
-                            Exploración de métodos avanzados para visualizar y comunicar 
-                            resultados de análisis de datos sociales de manera efectiva.
-                        </p>
-                    </article>
-
-                    <article class="articulo-item">
-                        <span class="articulo-category">metodología</span>
-                        <h3 class="articulo-title">
-                            <a href="#">Diseño Experimental en Ciencias Sociales</a>
-                        </h3>
-                        <p class="articulo-meta">
-                            Septiembre 5, de 2024 por <a href="#">Autor(es)</a>
-                        </p>
-                        <p class="articulo-description">
-                            Aplicación de métodos experimentales y cuasi-experimentales 
-                            en estudios de ciencias sociales.
-                        </p>
-                    </article>
-
-                    <article class="articulo-item">
-                        <span class="articulo-category">herramientas</span>
-                        <h3 class="articulo-title">
-                            <a href="#">Paquetes R para Análisis de Datos Sociales</a>
-                        </h3>
-                        <p class="articulo-meta">
-                            Agosto 18, de 2024 por <a href="#">Autor(es)</a>
-                        </p>
-                        <p class="articulo-description">
-                            Desarrollo y documentación de paquetes R especializados 
-                            para análisis metodológico en ciencias sociales.
-                        </p>
-                    </article>
-
-                    <article class="articulo-item">
-                        <span class="articulo-category">análisis</span>
-                        <h3 class="articulo-title">
-                            <a href="#">Machine Learning en Investigación Social</a>
-                        </h3>
-                        <p class="articulo-meta">
-                            Julio 22, de 2024 por <a href="#">Autor(es)</a>
-                        </p>
-                        <p class="articulo-description">
-                            Aplicación de técnicas de machine learning y aprendizaje 
-                            automático en problemas de investigación social.
-                        </p>
-                    </article>
-
-                    <article class="articulo-item">
-                        <span class="articulo-category">metodología</span>
-                        <h3 class="articulo-title">
-                            <a href="#">Análisis Causal en Estudios Observacionales</a>
-                        </h3>
-                        <p class="articulo-meta">
-                            Junio 8, de 2024 por <a href="#">Autor(es)</a>
-                        </p>
-                        <p class="articulo-description">
-                            Métodos para inferencia causal en estudios observacionales 
-                            de ciencias sociales.
-                        </p>
-                    </article>
-                </div>
+                <!-- Destacado se carga aquí -->
+                <div id="destacado-container"></div>
+                
+                <!-- Grid de artículos se carga aquí -->
+                <div id="articulos-container" class="articulos-grid"></div>
             </div>
         </section>
 
@@ -164,7 +60,7 @@
                     <div class="interactivo-item">
                         <a href="#">
                             <div class="interactivo-image">
-                                <div class="image-placeholder"></div>
+                                <div class="data-visualization"></div>
                             </div>
                             <h3>Visualización de Datos</h3>
                         </a>
@@ -172,7 +68,7 @@
                     <div class="interactivo-item">
                         <a href="#">
                             <div class="interactivo-image">
-                                <div class="image-placeholder"></div>
+                                <div class="data-analysis"></div>
                             </div>
                             <h3>Herramientas de Análisis</h3>
                         </a>
@@ -180,7 +76,7 @@
                     <div class="interactivo-item">
                         <a href="#">
                             <div class="interactivo-image">
-                                <div class="image-placeholder"></div>
+                                <div class="code-repo"></div>
                             </div>
                             <h3>Repositorios de Código</h3>
                         </a>
@@ -228,6 +124,7 @@
         </div>
     </footer>
 
+    <script src="js/posts-loader.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
