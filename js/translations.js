@@ -12,9 +12,8 @@ const translations = {
         
         // Interactivos
         interactivosTitle: "Interactivos",
-        interactivo1: "Visualización de Datos",
-        interactivo2: "Herramientas de Análisis",
-        interactivo3: "Repositorios de Código",
+        interactivo1: "Estudio Longitudinal de Relaciones Interculturales",
+        interactivo2: "Análisis de Prensa: Cobertura de Legitimidad Institucional",
         
         // Nosotros
         nosotrosTitle: "Nosotros",
@@ -50,9 +49,8 @@ const translations = {
         
         // Interactivos
         interactivosTitle: "Interactive",
-        interactivo1: "Data Visualization",
-        interactivo2: "Analysis Tools",
-        interactivo3: "Code Repositories",
+        interactivo1: "Longitudinal Study of Intercultural Relations",
+        interactivo2: "Press Analysis: Institutional Legitimacy Coverage",
         
         // Nosotros
         nosotrosTitle: "About Us",
