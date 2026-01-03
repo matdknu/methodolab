@@ -4,6 +4,7 @@ const translations = {
         // Navegación
         navInicio: "Inicio",
         navPublicaciones: "Publicaciones",
+        navInteractivos: "Interactivos",
         navSobreNosotros: "Sobre Nosotros",
         navContacto: "Contacto",
         
@@ -13,7 +14,7 @@ const translations = {
         // Interactivos
         interactivosTitle: "Interactivos",
         interactivo1: "Estudio Longitudinal de Relaciones Interculturales",
-        interactivo2: "Análisis de Prensa: Cobertura de Legitimidad Institucional",
+        interactivo2: "Google Trends: Análisis de Tendencias de Búsqueda",
         
         // Nosotros
         nosotrosTitle: "Nosotros",
@@ -45,6 +46,7 @@ const translations = {
         // Navigation
         navInicio: "Home",
         navPublicaciones: "Publications",
+        navInteractivos: "Interactive",
         navSobreNosotros: "About Us",
         navContacto: "Contact",
         
@@ -54,7 +56,7 @@ const translations = {
         // Interactivos
         interactivosTitle: "Interactive",
         interactivo1: "Longitudinal Study of Intercultural Relations",
-        interactivo2: "Press Analysis: Institutional Legitimacy Coverage",
+        interactivo2: "Google Trends: Search Trends Analysis",
         
         // Nosotros
         nosotrosTitle: "About Us",

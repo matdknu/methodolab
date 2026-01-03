@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "data-visualization"
         },
         {
-            url: "https://matdknu.shinyapps.io/analisis-prensa-carabineros/",
-            title: "Análisis de Prensa: Cobertura de Legitimidad Institucional",
+            url: "https://matdknu.shinyapps.io/google-trends-demo/",
+            title: "Google Trends: Análisis de Tendencias de Búsqueda",
             image: "data-analysis"
         },
         {
@@ -42,4 +42,6 @@ function renderAllInteractivos(interactivos) {
         `;
     }).join('');
 }
+
+
 
