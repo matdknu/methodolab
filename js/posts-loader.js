@@ -155,7 +155,7 @@ function getImageClass(imageType) {
 function getImageHTML(imageValue) {
     // Si es una ruta de imagen (contiene / o termina en .png, .jpg, .jpeg, .gif, .webp)
     if (imageValue && (imageValue.includes('/') || /\.(png|jpg|jpeg|gif|webp)$/i.test(imageValue))) {
-        return `<img src="${imageValue}" alt="" class="post-image-real">`;
+        return `<img src="${imageValue}" alt="Imagen de la publicación" class="post-image-real" loading="lazy">`;
     }
     // Si no, usar el sistema de placeholders
     const imageClass = getImageClass(imageValue);
