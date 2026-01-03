@@ -90,6 +90,9 @@ function renderFeaturedPost(post) {
             <div class="destacado-content">
                 <div class="destacado-image">
                     ${imageHTML}
+                    <noscript>
+                        <img src="${post.image}" alt="Imagen de la publicación" class="post-image-real">
+                    </noscript>
                 </div>
                 <div class="destacado-text">
                     <span class="destacado-category">${post.category}</span>
