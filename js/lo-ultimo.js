@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "data-analysis",
             tipo: "interactivo",
             category: "Interactivo"
+        },
+        {
+            url: "https://matdknu.shinyapps.io/phd_proposal/",
+            title: "Social Pulse Simulation",
+            image: "code-repo",
+            tipo: "interactivo",
+            category: "Interactivo"
         }
     ];
 
