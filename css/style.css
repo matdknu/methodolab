@@ -703,6 +703,9 @@ a:hover {
     border-radius: 4px;
     overflow: hidden;
     transition: opacity 0.3s ease;
+    padding-top: 60%; /* Altura para imágenes pequeñas */
+    background: var(--bg-light);
+    border: 1px solid var(--border);
 }
 
 .articulo-item:hover .articulo-image {
