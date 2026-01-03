@@ -1330,14 +1330,14 @@ a:hover {
 
 /* Página de publicación individual */
 .publicacion-articulo {
-    padding: 4rem 0;
+    padding: 2rem 0 4rem;
     min-height: 60vh;
 }
 
 .articulo-header {
     max-width: 800px;
-    margin: 0 auto 3rem;
-    padding-bottom: 2rem;
+    margin: 0 auto 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -1440,6 +1440,123 @@ a:hover {
 
 .btn-volver:hover {
     color: var(--text-light);
+}
+
+/* Sección Lo último */
+.lo-ultimo {
+    padding: 4rem 0;
+    background: var(--bg-light);
+    border-top: 1px solid var(--border);
+}
+
+.lo-ultimo-titulo {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.lo-ultimo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.lo-ultimo-item {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lo-ultimo-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.lo-ultimo-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lo-ultimo-image {
+    width: 100%;
+    padding-top: 60%;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.lo-ultimo-image .post-image-real,
+.lo-ultimo-image .image-mapa,
+.lo-ultimo-image .image-grafico,
+.lo-ultimo-image .image-datos,
+.lo-ultimo-image .data-visualization,
+.lo-ultimo-image .data-analysis,
+.lo-ultimo-image .code-repo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lo-ultimo-image .post-image-real {
+    object-fit: cover;
+}
+
+.lo-ultimo-content {
+    padding: 1.5rem;
+}
+
+.lo-ultimo-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-lighter);
+    margin-bottom: 0.5rem;
+}
+
+.lo-ultimo-title {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.lo-ultimo-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.no-items {
+    text-align: center;
+    color: var(--text-light);
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .lo-ultimo {
+        padding: 2rem 0;
+    }
+    
+    .lo-ultimo-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .lo-ultimo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
