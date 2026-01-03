@@ -1,0 +1,33 @@
+---
+title: "4 años de PAES ¿Por qué seguimos perpetuando la desigualdad?"
+tipo: "difusion"
+category: "educación"
+date: "Enero 15, de 2025"
+author: "Matías Deneken"
+authorLink: "#"
+description: "Un análisis sobre la Prueba de Acceso a la Educación Superior (PAES) y su impacto en la perpetuación de desigualdades educativas en Chile."
+link: "Publicaciones/paes-desigualdad.html"
+featured: true
+image_path: "images/paes-scatter-plot.png"
+---
+
+Han pasado cuatro años desde la implementación de la Prueba de Acceso a la Educación Superior (PAES), y los datos revelan una realidad preocupante: las desigualdades educativas no solo persisten, sino que en algunos casos se han profundizado. Este análisis examina los patrones de resultados y las brechas que continúan marcando el acceso a la educación superior en Chile.
+
+![Análisis de resultados PAES](images/paes-scatter-plot.png)
+
+## El contexto de la PAES
+
+La PAES fue diseñada como una herramienta más equitativa que su predecesora, la PSU. Sin embargo, después de cuatro años de aplicación, los datos muestran que los estudiantes de diferentes contextos socioeconómicos y tipos de establecimientos educacionales siguen obteniendo resultados marcadamente diferentes.
+
+## Análisis de los resultados
+
+El gráfico de dispersión presentado muestra la distribución de resultados según diferentes variables. Los patrones observados revelan agrupaciones claras que corresponden a diferentes perfiles de estudiantes, lo que sugiere que factores más allá de las habilidades académicas están influyendo en los resultados.
+
+## Desigualdades persistentes
+
+A pesar de los cambios en el sistema de admisión, las brechas entre estudiantes de establecimientos municipales, particulares subvencionados y particulares pagados se mantienen. Estas diferencias no pueden explicarse únicamente por diferencias en preparación académica, sino que reflejan desigualdades estructurales más profundas en el sistema educativo.
+
+## Reflexiones finales
+
+La pregunta central que debemos hacernos es: ¿por qué seguimos perpetuando la desigualdad? La respuesta no está solo en la prueba misma, sino en todo el sistema educativo que la precede. Mientras no abordemos las desigualdades de base en la educación primaria y secundaria, cualquier cambio en el sistema de admisión universitaria tendrá un impacto limitado.
+

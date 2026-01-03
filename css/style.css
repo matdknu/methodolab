@@ -542,25 +542,26 @@ a:hover {
 
 .interactivos-ver-mas-btn {
     display: inline-block;
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 0.5rem 1.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
+    padding: 1rem 2.5rem;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
     transition: var(--transition);
-    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-decoration: none;
-    border-radius: 4px;
 }
 
 .interactivos-ver-mas-btn:hover {
-    background: var(--bg-light);
-    border-color: var(--text);
+    background: #ffffff;
+    color: #000000;
     transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
 
@@ -714,6 +715,36 @@ a:hover {
 .articulo-item:hover .articulo-image .image-mapa,
 .articulo-item:hover .articulo-image .image-grafico,
 .articulo-item:hover .articulo-image .image-datos {
+    filter: brightness(1.1) saturate(1.2);
+    transform: scale(1.02);
+}
+
+/* Imágenes reales */
+.post-image-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.articulo-image .post-image-real {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destacado-image .post-image-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articulo-item:hover .articulo-image .post-image-real,
+.destacado:hover .destacado-image .post-image-real {
     filter: brightness(1.1) saturate(1.2);
     transform: scale(1.02);
 }
@@ -1322,6 +1353,13 @@ a:hover {
     margin-bottom: 3rem;
 }
 
+.articulo-imagen-principal .post-image-real {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--border);
+}
+
 .articulo-imagen-principal .image-mapa,
 .articulo-imagen-principal .image-grafico,
 .articulo-imagen-principal .image-datos {
@@ -1332,6 +1370,16 @@ a:hover {
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text);
+}
+
+.articulo-intro {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: var(--text);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .articulo-texto h2 {

@@ -84,12 +84,29 @@ Los colores principales se pueden modificar en `css/style.css` en la sección `:
 
 Edita el contenido directamente en `index.html`. Cada sección está claramente marcada con IDs.
 
+## 📝 Publicar Nuevas Entradas
+
+El sitio usa **Quarto** para publicar nuevas entradas de forma fácil y profesional.
+
+### Publicación Rápida
+
+```bash
+# 1. Crear carpeta de publicación
+mkdir -p Publicaciones-QMD/2025-01-20-mi-publicacion/images
+
+# 2. Crear index.qmd (ver template en PUBLICAR.md)
+
+# 3. Publicar (procesa, renderiza y hace push)
+node scripts/publicar.js --push
+```
+
+Para más detalles, consulta [PUBLICAR.md](PUBLICAR.md).
+
 ## Próximos Pasos
 
-- [ ] Agregar imágenes reales
+- [x] Sistema de publicación con Quarto
 - [ ] Configurar formulario de contacto
 - [ ] Integrar con backend si es necesario
-- [ ] Agregar más publicaciones
 - [ ] Configurar analytics
 - [ ] Optimizar para producción
 

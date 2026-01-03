@@ -82,14 +82,14 @@ function updateVerMasButton(totalPosts) {
 
 function renderFeaturedPost(post) {
     const container = document.getElementById('destacado-container');
-    const imageClass = getImageClass(post.image);
+    const imageHTML = getImageHTML(post.image);
     const tipoLabel = getTipoLabel(post.tipo);
     
     container.innerHTML = `
         <div class="destacado">
             <div class="destacado-content">
                 <div class="destacado-image">
-                    <div class="${imageClass}"></div>
+                    ${imageHTML}
                 </div>
                 <div class="destacado-text">
                     <span class="destacado-category">${post.category}</span>
@@ -119,12 +119,12 @@ function renderPostsGrid(posts) {
     }
 
     container.innerHTML = posts.map(post => {
-        const imageClass = getImageClass(post.image);
+        const imageHTML = getImageHTML(post.image);
         const tipoLabel = getTipoLabel(post.tipo);
         return `
             <article class="articulo-item" data-tipo="${post.tipo}">
                 <div class="articulo-image">
-                    <div class="${imageClass}"></div>
+                    ${imageHTML}
                 </div>
                 <span class="articulo-category">${post.category}</span>
                 <h3 class="articulo-title">
@@ -150,6 +150,16 @@ function getImageClass(imageType) {
         'default': 'image-placeholder'
     };
     return imageClasses[imageType] || imageClasses['default'];
+}
+
+function getImageHTML(imageValue) {
+    // Si es una ruta de imagen (contiene / o termina en .png, .jpg, .jpeg, .gif, .webp)
+    if (imageValue && (imageValue.includes('/') || /\.(png|jpg|jpeg|gif|webp)$/i.test(imageValue))) {
+        return `<img src="${imageValue}" alt="" class="post-image-real">`;
+    }
+    // Si no, usar el sistema de placeholders
+    const imageClass = getImageClass(imageValue);
+    return `<div class="${imageClass}"></div>`;
 }
 
 function getTipoLabel(tipo) {

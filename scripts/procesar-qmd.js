@@ -128,6 +128,17 @@ function procesarPublicaciones() {
             try {
                 const { metadata, body } = parseQmdFile(qmdPath);
                 
+                // Determinar imagen: si hay image_path, usarlo; si no, usar image_type
+                let imageValue;
+                if (metadata.image_path) {
+                    // Si es una ruta relativa, ajustarla desde la raíz del proyecto
+                    imageValue = metadata.image_path.startsWith('/') 
+                        ? metadata.image_path.slice(1) 
+                        : metadata.image_path;
+                } else {
+                    imageValue = getImageType(metadata);
+                }
+                
                 // Convertir a formato JSON esperado
                 const post = {
                     tipo: metadata.tipo || 'difusion',
@@ -138,7 +149,7 @@ function procesarPublicaciones() {
                     authorLink: metadata.authorLink || '#',
                     description: metadata.description || '',
                     link: metadata.link || '#',
-                    image: getImageType(metadata),
+                    image: imageValue,
                     featured: metadata.featured === 'true' || metadata.featured === true
                 };
                 
