@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un análisis sobre la Prueba de Acceso a la Educación Superior (PAES) y su impacto en la perpetuación de desigualdades educativas en Chile.">
+    <title>4 años de PAES ¿Por qué seguimos perpetuando la desigualdad? | Methodolab</title>
+    <link rel="icon" type="image/png" href="../logos/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="../index.html" class="logo">
+                        <img src="../logos/logo.png" alt="Methodolab" class="logo-img">
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="../index.html" data-translate="navInicio">Inicio</a></li>
+                        <li><a href="../publicaciones.html" data-translate="navPublicaciones">Publicaciones</a></li>
+                        <li><a href="../interactivos.html" data-translate="navInteractivos">Interactivos</a></li>
+                        <li><a href="../nosotros.html" data-translate="navSobreNosotros">Sobre Nosotros</a></li>
+                        <li><a href="../index.html#contacto" data-translate="navContacto">Contacto</a></li>
+                    </ul>
+                    <div class="nav-right">
+                        <div class="lang-selector">
+                            <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
+                                <span class="flag">🇨🇱</span>
+                                <span class="lang-code">ESP</span>
+                            </button>
+                            <button class="lang-btn" onclick="changeLanguage('en')" title="English">
+                                <span class="flag">🇬🇧</span>
+                                <span class="lang-code">ENG</span>
+                            </button>
+                        </div>
+                        <button class="menu-toggle" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="publicacion-articulo">
+            <div class="container">
+                <div class="articulo-header">
+                    <span class="articulo-category">educación</span>
+                    <h1 class="articulo-titulo">
+                        4 años de PAES ¿Por qué seguimos perpetuando la desigualdad?
+                        <span class="tipo-label tipo-difusion">Difusión</span>
+                    </h1>
+                    <p class="articulo-meta">
+                        Enero 15, de 2025 por <a href="../matias-deneken.html">Matías Deneken</a>
+                    </p>
+                </div>
+
+                <div class="articulo-content">
+                    <div class="articulo-imagen-principal">
+                        <img src="../images/paes-scatter-plot.png" alt="Análisis de resultados PAES mostrando distribución de puntajes según diferentes variables" class="post-image-real" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="image-datos" style="display:none;">
+                            <p style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#666; text-align:center; padding:2rem;">
+                                Imagen no disponible<br>
+                                <small>Agrega la imagen en: images/paes-scatter-plot.png</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="articulo-texto">
+                        <p class="articulo-intro">
+                            Han pasado cuatro años desde la implementación de la Prueba de Acceso a la Educación Superior (PAES), y los datos revelan una realidad preocupante: las desigualdades educativas no solo persisten, sino que en algunos casos se han profundizado. Este análisis examina los patrones de resultados y las brechas que continúan marcando el acceso a la educación superior en Chile.
+                        </p>
+
+                        <h2>El contexto de la PAES</h2>
+                        <p>La PAES fue diseñada como una herramienta más equitativa que su predecesora, la PSU. Sin embargo, después de cuatro años de aplicación, los datos muestran que los estudiantes de diferentes contextos socioeconómicos y tipos de establecimientos educacionales siguen obteniendo resultados marcadamente diferentes.</p>
+
+                        <h2>Análisis de los resultados</h2>
+                        <p>El gráfico de dispersión presentado muestra la distribución de resultados según diferentes variables. Los patrones observados revelan agrupaciones claras que corresponden a diferentes perfiles de estudiantes, lo que sugiere que factores más allá de las habilidades académicas están influyendo en los resultados.</p>
+
+                        <h2>Desigualdades persistentes</h2>
+                        <p>A pesar de los cambios en el sistema de admisión, las brechas entre estudiantes de establecimientos municipales, particulares subvencionados y particulares pagados se mantienen. Estas diferencias no pueden explicarse únicamente por diferencias en preparación académica, sino que reflejan desigualdades estructurales más profundas en el sistema educativo.</p>
+
+                        <h2>Reflexiones finales</h2>
+                        <p>La pregunta central que debemos hacernos es: ¿por qué seguimos perpetuando la desigualdad? La respuesta no está solo en la prueba misma, sino en todo el sistema educativo que la precede. Mientras no abordemos las desigualdades de base en la educación primaria y secundaria, cualquier cambio en el sistema de admisión universitaria tendrá un impacto limitado.</p>
+                    </div>
+                </div>
+
+                <div class="articulo-footer">
+                    <a href="../publicaciones.html" class="btn-volver">← Volver a Publicaciones</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-translate="footerText">&copy; 2024 Methodolab. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
