@@ -19,7 +19,7 @@ La Prueba de Acceso a la Educación Superior (PAES) vuelve a confirmar una tende
 
 La desigualdad territorial sigue operando como un filtro silencioso. El ejemplo clásico es Santiago: de manera sistemática, las comunas del sector nororiente exhiben resultados muy superiores al resto de la capital. En algunas comparaciones, la brecha puede rondar **los 120 puntos**, una distancia que no se explica solo por "esfuerzo individual", sino por un ecosistema completo de oportunidades desiguales (oferta escolar, expectativas, redes, capital cultural, acceso a apoyos externos, etc.).
 
-![Segregación espacial](images/segregacion-espacial.png)
+![Segregación espacial](images/mapa_rm_facet_anos.png)
 
 ### 2) El NEM pierde poder predictivo
 
@@ -27,7 +27,7 @@ Un segundo problema es la tensión entre **trayectoria escolar** y **estandariza
 
 Esto es particularmente importante porque muchas universidades han reforzado el peso de la trayectoria (NEM y ranking) frente a la prueba, buscando corregir sesgos. Sin embargo, esa corrección puede abrir otra desigualdad: **la distinta "severidad" o exigencia del establecimiento de origen**, que hace que un mismo promedio no signifique lo mismo en distintos contextos escolares.
 
-![NEM vs PAES](images/nem-paes.png)
+![NEM vs PAES](images/patrones_nem_prueba.png)
 
 ### 3) Dependencia: concentración de altos puntajes
 
@@ -35,7 +35,7 @@ El tercer problema es estructural: la distribución de buenos puntajes está fue
 
 La pregunta no es si "son más inteligentes" (una salida fácil y mala), sino **qué mecanismos acumulativos** están operando: nivel educacional de los padres, ingresos, tiempo disponible, acceso a preuniversitario, composición escolar, estabilidad docente, condiciones materiales del barrio, e incluso factores menos visibles como expectativas institucionales y capital informacional sobre el sistema.
 
-![Concentración de puntajes](images/concentracion-puntajes.png)
+![Concentración de puntajes](images/histograma_2026_financiamiento_d.png)
 
 ### La buena noticia: se mantiene una mirada crítica
 
