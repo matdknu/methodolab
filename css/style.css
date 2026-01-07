@@ -1393,6 +1393,26 @@ a:hover {
     border-bottom: 1px solid var(--border);
 }
 
+/* Imágenes en el cuerpo del artículo */
+.articulo-imagen-cuerpo {
+    width: 100%;
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.articulo-imagen-cuerpo .post-image-real {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.articulo-texto img.post-image-real {
+    margin: 2.5rem auto;
+}
+
 .articulo-texto h2 {
     font-family: 'Crimson Text', serif;
     font-size: 1.75rem;
