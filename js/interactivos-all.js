@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             url: "https://matdknu.shinyapps.io/google-trends-demo/",
             title: "Google Trends: Análisis de Tendencias de Búsqueda",
-            image: "data-analysis"
+            image: "images/google_trends.png"
         },
         {
             url: "https://matdknu.shinyapps.io/phd_proposal/",
@@ -30,11 +30,17 @@ function renderAllInteractivos(interactivos) {
     }
 
     container.innerHTML = interactivos.map(interactivo => {
+        // Si la imagen es una ruta (contiene / o termina en extensión de imagen), usar imagen real
+        const isRealImage = interactivo.image && (interactivo.image.includes('/') || /\.(png|jpg|jpeg|gif|webp)$/i.test(interactivo.image));
+        const imageHTML = isRealImage 
+            ? `<img src="${interactivo.image}" alt="${interactivo.title}" class="post-image-real" loading="lazy">`
+            : `<div class="${interactivo.image}"></div>`;
+        
         return `
             <article class="interactivo-item-todas">
                 <a href="${interactivo.url}" target="_blank" rel="noopener noreferrer">
                     <div class="interactivo-image">
-                        <div class="${interactivo.image}"></div>
+                        ${imageHTML}
                     </div>
                     <h3>${interactivo.title}</h3>
                 </a>

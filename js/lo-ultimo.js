@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             url: "https://matdknu.shinyapps.io/google-trends-demo/",
             title: "Google Trends: Análisis de Tendencias de Búsqueda",
-            image: "data-analysis",
+            image: "images/google_trends.png",
             tipo: "interactivo",
             category: "Interactivo"
         },
