@@ -8,3 +8,4 @@ Coloca aquí la imagen principal de la publicación.
 
 **Ubicación final:** La imagen debe copiarse también a `images/paes-scatter-plot.png` en la raíz del proyecto para que funcione correctamente en el sitio.
 
+
