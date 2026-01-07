@@ -1,33 +1,45 @@
 ---
-title: "4 años de PAES ¿Por qué seguimos perpetuando la desigualdad?"
+title: "La selección universitaria en Chile: tres problemas y una buena noticia"
 tipo: "difusion"
 category: "educación"
-date: "Enero 15, de 2025"
+date: "Enero 16, de 2025"
 author: "Matías Deneken"
 authorLink: "#"
-description: "Un análisis sobre la Prueba de Acceso a la Educación Superior (PAES) y su impacto en la perpetuación de desigualdades educativas en Chile."
+description: "La Prueba de Acceso a la Educación Superior (PAES) vuelve a confirmar una tendencia de largo plazo: el establecimiento educacional del que egresas sigue siendo un determinante central del rendimiento en las pruebas de selección."
 link: "Publicaciones/paes-desigualdad.html"
 featured: true
 image_path: "images/paes-scatter-plot.png"
 ---
 
-Han pasado cuatro años desde la implementación de la Prueba de Acceso a la Educación Superior (PAES), y los datos revelan una realidad preocupante: las desigualdades educativas no solo persisten, sino que en algunos casos se han profundizado. Este análisis examina los patrones de resultados y las brechas que continúan marcando el acceso a la educación superior en Chile.
+La Prueba de Acceso a la Educación Superior (PAES) vuelve a confirmar una tendencia de largo plazo: el establecimiento educacional del que egresas sigue siendo un determinante central del rendimiento en las pruebas de selección. Esto no es nuevo en la literatura, pero vale la pena insistir —con más precisión— porque detrás del "lugar común" se esconden al menos **tres problemas** y **una buena noticia**.
 
 ![Análisis de resultados PAES](images/paes-scatter-plot.png)
 
-## El contexto de la PAES
+### 1) Segregación espacial
 
-La PAES fue diseñada como una herramienta más equitativa que su predecesora, la PSU. Sin embargo, después de cuatro años de aplicación, los datos muestran que los estudiantes de diferentes contextos socioeconómicos y tipos de establecimientos educacionales siguen obteniendo resultados marcadamente diferentes.
+La desigualdad territorial sigue operando como un filtro silencioso. El ejemplo clásico es Santiago: de manera sistemática, las comunas del sector nororiente exhiben resultados muy superiores al resto de la capital. En algunas comparaciones, la brecha puede rondar **los 120 puntos**, una distancia que no se explica solo por "esfuerzo individual", sino por un ecosistema completo de oportunidades desiguales (oferta escolar, expectativas, redes, capital cultural, acceso a apoyos externos, etc.).
 
-## Análisis de los resultados
+![Segregación espacial](images/segregacion-espacial.png)
 
-El gráfico de dispersión presentado muestra la distribución de resultados según diferentes variables. Los patrones observados revelan agrupaciones claras que corresponden a diferentes perfiles de estudiantes, lo que sugiere que factores más allá de las habilidades académicas están influyendo en los resultados.
+### 2) El NEM pierde poder predictivo
 
-## Desigualdades persistentes
+Un segundo problema es la tensión entre **trayectoria escolar** y **estandarización**. En la práctica, el **NEM parece haber debilitado su capacidad de predecir desempeño** en la PAES: solo una parte de quienes tienen promedios altos logra puntajes altos, mientras que para un grupo relevante el NEM no anticipa el rendimiento en la prueba. Esto sugiere, al menos, dos hipótesis plausibles: **inflación de notas** y/o **desalineación entre lo que se evalúa en la escuela y lo que exige la prueba**.
 
-A pesar de los cambios en el sistema de admisión, las brechas entre estudiantes de establecimientos municipales, particulares subvencionados y particulares pagados se mantienen. Estas diferencias no pueden explicarse únicamente por diferencias en preparación académica, sino que reflejan desigualdades estructurales más profundas en el sistema educativo.
+Esto es particularmente importante porque muchas universidades han reforzado el peso de la trayectoria (NEM y ranking) frente a la prueba, buscando corregir sesgos. Sin embargo, esa corrección puede abrir otra desigualdad: **la distinta "severidad" o exigencia del establecimiento de origen**, que hace que un mismo promedio no signifique lo mismo en distintos contextos escolares.
 
-## Reflexiones finales
+![NEM vs PAES](images/nem-paes.png)
 
-La pregunta central que debemos hacernos es: ¿por qué seguimos perpetuando la desigualdad? La respuesta no está solo en la prueba misma, sino en todo el sistema educativo que la precede. Mientras no abordemos las desigualdades de base en la educación primaria y secundaria, cualquier cambio en el sistema de admisión universitaria tendrá un impacto limitado.
+### 3) Dependencia: concentración de altos puntajes
+
+El tercer problema es estructural: la distribución de buenos puntajes está fuertemente concentrada por tipo de establecimiento. Aunque los colegios particulares pagados representan una fracción pequeña del estudiantado, concentran una proporción muy alta de los puntajes sobresalientes, mientras que el resto se reparte entre municipal y particular subvencionado. Esto obliga a volver a lo básico: describir bien el patrón y, sobre todo, **explicarlo con datos**.
+
+La pregunta no es si "son más inteligentes" (una salida fácil y mala), sino **qué mecanismos acumulativos** están operando: nivel educacional de los padres, ingresos, tiempo disponible, acceso a preuniversitario, composición escolar, estabilidad docente, condiciones materiales del barrio, e incluso factores menos visibles como expectativas institucionales y capital informacional sobre el sistema.
+
+![Concentración de puntajes](images/concentracion-puntajes.png)
+
+### La buena noticia: se mantiene una mirada crítica
+
+La buena noticia es política y cultural: pese a ciclos de reformas, cansancio y promesas, la discusión pública no se volvió autocomplaciente. Desde las protestas estudiantiles de hace más de una década, se instaló una sensibilidad crítica que —con matices— se mantiene. No hemos caído del todo en el eslogan simplista del "fin de la selección", pero tampoco normalizamos que la universidad que te acoge siga estando tan fuertemente asociada a tu origen social.
+
+**Tres problemas, una buena noticia.** Y un desafío persistente: que los datos no solo confirmen lo obvio, sino que permitan identificar con claridad dónde están los mecanismos que reproducen la desigualdad —y cuáles son, de verdad, los puntos de intervención.
 
