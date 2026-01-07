@@ -86,21 +86,18 @@ Edita el contenido directamente en `index.html`. Cada sección está claramente 
 
 ## 📝 Publicar Nuevas Entradas
 
-El sitio usa **Quarto** para publicar nuevas entradas de forma fácil y profesional.
+Para agregar nuevas publicaciones al sitio, consulta la guía completa:
 
-### Publicación Rápida
+**[COMO-PUBLICAR.md](COMO-PUBLICAR.md)** - Guía paso a paso para crear y publicar contenido
 
-```bash
-# 1. Crear carpeta de publicación
-mkdir -p Publicaciones-QMD/2025-01-20-mi-publicacion/images
+### Resumen rápido
 
-# 2. Crear index.qmd (ver template en PUBLICAR.md)
+1. Crear archivo HTML en `Publicaciones/`
+2. Agregar imágenes a `images/`
+3. Actualizar `posts.json` con la nueva publicación
+4. Hacer commit y push
 
-# 3. Publicar (procesa, renderiza y hace push)
-node scripts/publicar.js --push
-```
-
-Para más detalles, consulta [PUBLICAR.md](PUBLICAR.md).
+Ver [COMO-PUBLICAR.md](COMO-PUBLICAR.md) para detalles completos y templates.
 
 ## Próximos Pasos
 
