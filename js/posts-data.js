@@ -2,6 +2,18 @@
 const postsData = [
   {
     "tipo": "difusion",
+    "category": "desigualdad",
+    "title": "CASEN 2024: Nudos de una desigualdad multidimensional",
+    "date": "Enero 15, de 2026",
+    "author": "Matías Deneken",
+    "authorLink": "#",
+    "description": "La CASEN 2024 revela una desigualdad que se expresa en múltiples dimensiones: discriminación por orientación sexual, brechas salariales de género, redes de apoyo diferenciadas y tiempos de traslado desiguales según territorio.",
+    "link": "Publicaciones/casen-desigualdad.html",
+    "image": "images/casen-2024-portada.png",
+    "featured": true
+  },
+  {
+    "tipo": "difusion",
     "category": "educación",
     "title": "La selección universitaria en Chile: tres problemas y una buena noticia",
     "date": "Enero 16, de 2025",
@@ -10,6 +22,6 @@ const postsData = [
     "description": "La Prueba de Acceso a la Educación Superior (PAES) vuelve a confirmar una tendencia de largo plazo: el establecimiento educacional del que egresas sigue siendo un determinante central del rendimiento en las pruebas de selección.",
     "link": "Publicaciones/paes-desigualdad.html",
     "image": "images/paes-scatter-plot.png",
-    "featured": true
+    "featured": false
   }
 ];

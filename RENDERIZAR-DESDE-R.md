@@ -28,10 +28,10 @@ Rscript scripts/renderizar-desde-r.R
 ```r
 # Desde R
 source("scripts/renderizar-desde-r.R")
-renderizar_publicacion("Publicaciones-QMD/2025-01-15-analisis-psu")
+renderizar_publicacion("Publicaciones-QMD/2025-01-15-paes-desigualdad")
 
 # O desde la terminal
-Rscript scripts/renderizar-desde-r.R Publicaciones-QMD/2025-01-15-analisis-psu
+Rscript scripts/renderizar-desde-r.R Publicaciones-QMD/2025-01-15-paes-desigualdad
 ```
 
 ## Cómo Funciona
@@ -51,7 +51,7 @@ Publicaciones-QMD/
 ```
 
 El archivo `index.qmd` debe tener un frontmatter con:
-- `link`: Ruta donde se guardará el HTML renderizado (ej: `publicaciones/analisis-psu.html`)
+- `link`: Ruta donde se guardará el HTML renderizado (ej: `Publicaciones/paes-desigualdad.html`)
 
 ## Ejemplo de index.qmd
 
@@ -64,7 +64,7 @@ date: "Enero 15, de 2025"
 author: "Matías Deneken"
 authorLink: "#"
 description: "Descripción breve"
-link: "publicaciones/analisis-psu.html"
+link: "Publicaciones/paes-desigualdad.html"
 featured: false
 image_type: "datos"
 ---

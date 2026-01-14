@@ -4,7 +4,7 @@
 # 
 # Uso:
 #   Rscript scripts/renderizar-desde-r.R
-#   Rscript scripts/renderizar-desde-r.R Publicaciones-QMD/2025-01-15-analisis-psu
+#   Rscript scripts/renderizar-desde-r.R Publicaciones-QMD/2025-01-15-paes-desigualdad
 
 library(quarto)
 
