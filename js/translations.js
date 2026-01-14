@@ -12,6 +12,7 @@ const translations = {
         heroSubtitle: "Metodología en Ciencias Sociales",
         todasPublicaciones: "Todas las Publicaciones",
         todasInteractivas: "Todas las Interactivas",
+        conversemos: "Conversemos",
         
         // Interactivos
         interactivosTitle: "Interactivos",
@@ -67,6 +68,7 @@ const translations = {
         heroSubtitle: "Methodology in Social Sciences",
         todasPublicaciones: "All Publications",
         todasInteractivas: "All Interactive Tools",
+        conversemos: "Let's Talk",
         
         // Interactivos
         interactivosTitle: "Interactive",

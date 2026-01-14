@@ -259,6 +259,38 @@ a:hover {
     text-transform: lowercase;
 }
 
+/* Botón Conversemos */
+.btn-conversemos {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.875rem 1.75rem;
+    background: linear-gradient(135deg, var(--difusion) 0%, #1d4ed8 100%);
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.btn-conversemos:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-conversemos:active {
+    transform: translateY(0);
+}
+
+.btn-conversemos svg {
+    flex-shrink: 0;
+}
+
 /* Destacado */
 .destacado {
     padding: 4rem 0;
