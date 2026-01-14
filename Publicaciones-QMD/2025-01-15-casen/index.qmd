@@ -123,3 +123,11 @@ La CASEN no es solo un instrumento de medición: es un **espejo que refleja las 
 Cada punto porcentual en estos gráficos representa **vidas concretas**: mujeres que no pueden ahorrar pese a tener la misma formación que sus pares hombres, familias que pierden horas preciosas en traslados que otros no deben hacer, personas que ocultan su identidad por miedo a la exclusión. Los datos nos dan el diagnóstico. Ahora corresponde al Estado, al sector privado y a la sociedad civil actuar en consecuencia.
 
 **La desigualdad no es inevitable**: es una construcción social que puede ser desmantelada con políticas públicas inteligentes, recursos bien asignados y un compromiso colectivo con la justicia. Estos tres hallazgos son una invitación urgente a pasar de la descripción a la transformación.
+
+---
+
+## Descarga el informe completo
+
+Accede al documento PDF con todos los análisis, gráficos y propuestas de política pública.
+
+[📥 Descargar PDF](../docs/informe-casen-2024.pdf){.btn-descarga}
