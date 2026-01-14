@@ -61,3 +61,9 @@ Deberías ver las 4 IPs de GitHub Pages, no `25.26.27.28`.
 **Importante:** El certificado SSL no funcionará hasta que el DNS apunte correctamente a las IPs de GitHub Pages.
 
 
+
+
+
+
+
+

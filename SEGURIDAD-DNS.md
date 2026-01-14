@@ -93,3 +93,9 @@ Si quieres maximizar la privacidad, usa solo Cloudflare DNS (1.1.1.1) en lugar d
 
 **Nota:** El cambio de DNS es una práctica común y recomendada por expertos en seguridad. Muchas empresas y usuarios usan DNS públicos para mejor rendimiento y seguridad.
 
+
+
+
+
+
+

@@ -169,3 +169,9 @@ Este script crea un archivo README con instrucciones para crear la imagen.
 - El script procesa automáticamente todas las carpetas en `Publicaciones-QMD/`
 - Las publicaciones se ordenan por fecha (más recientes primero)
 
+
+
+
+
+
+

@@ -10,6 +10,8 @@ const translations = {
         
         // Hero
         heroSubtitle: "Metodología en Ciencias Sociales",
+        todasPublicaciones: "Todas las Publicaciones",
+        todasInteractivas: "Todas las Interactivas",
         
         // Interactivos
         interactivosTitle: "Interactivos",
@@ -18,13 +20,10 @@ const translations = {
         
         // Nosotros
         nosotrosTitle: "Nosotros",
-        nosotrosIntro: "Methodolab es un laboratorio de metodología en ciencias sociales dedicado al desarrollo y aplicación de técnicas avanzadas para la investigación empírica.",
+        nosotrosIntro1: "MethodoLab es un espacio de difusión sobre hechos que acontecen a lo largo del mundo. Es una organización sin fines de lucro y autogestionada. El fin último es poder influir en el debate público con evidencia.",
+        nosotrosIntro2: "En un futuro próximo buscamos ampliar nuestras funciones a brindar asesorías que permitan co-adyudar a entender los problemas sociales desde la vereda que el mundo contemporáneo necesita: La complejidad.",
         nosotrosName: "Matías Deneken",
         perfilCargo: "Fundador de Methodolab",
-        nosotrosBio1: "Matías Deneken es investigador en metodología de ciencias sociales, especializado en el desarrollo y aplicación de técnicas avanzadas para el análisis de datos sociales. Su trabajo se centra en la intersección entre la metodología cuantitativa, el análisis de datos y las ciencias sociales, con énfasis en inferencia causal, análisis de datos complejos y visualización de información.",
-        nosotrosBio2: "A través de Methodolab, dirige proyectos de investigación que combinan rigor metodológico con aplicaciones prácticas, desarrollando herramientas y técnicas que permiten abordar preguntas de investigación complejas. Su investigación abarca temas como análisis de elecciones, migración interna, desigualdades sociales y metodologías experimentales.",
-        nosotrosBio3: "Además de su trabajo de investigación, Matías se dedica a la difusión de metodologías avanzadas a través de publicaciones académicas y de divulgación, así como al desarrollo de software y herramientas computacionales para facilitar el análisis de datos sociales.",
-        nosotrosBio4: "Methodolab es un laboratorio de metodología en ciencias sociales que busca analizar y desarrollar metodologías avanzadas para la investigación, combinando rigor metodológico con aplicaciones prácticas en problemas de investigación relevantes.",
         
         // Contacto
         contactoTitle: "Contacto",
@@ -38,9 +37,23 @@ const translations = {
         por: "por",
         verMas: "Ver todas las publicaciones",
         verTodasInteractivas: "Ver todas las interactivas",
+        volverPublicaciones: "← Volver a Publicaciones",
+        loUltimo: "Lo último",
+        noPublicaciones: "No hay publicaciones disponibles.",
         
         // Botones
-        btnSobreNosotros: "Sobre Nosotros"
+        btnSobreNosotros: "Sobre Nosotros",
+        
+        // Categorías
+        categoriaEducacion: "educación",
+        categoriaMetodologia: "metodología",
+        categoriaGenero: "género",
+        categoriaNacional: "nacional",
+        categoriaElecciones: "elecciones",
+        
+        // Tipos
+        tipoDifusion: "Difusión",
+        tipoAcademico: "Académico"
     },
     en: {
         // Navigation
@@ -52,6 +65,8 @@ const translations = {
         
         // Hero
         heroSubtitle: "Methodology in Social Sciences",
+        todasPublicaciones: "All Publications",
+        todasInteractivas: "All Interactive Tools",
         
         // Interactivos
         interactivosTitle: "Interactive",
@@ -60,13 +75,10 @@ const translations = {
         
         // Nosotros
         nosotrosTitle: "About Us",
-        nosotrosIntro: "Methodolab is a social science methodology laboratory dedicated to the development and application of advanced techniques for empirical research.",
+        nosotrosIntro1: "MethodoLab is a space for disseminating facts that happen around the world. It is a non-profit and self-managed organization. The ultimate goal is to be able to influence public debate with evidence.",
+        nosotrosIntro2: "In the near future we seek to expand our functions to provide advisory services that help understand social problems from the perspective that the contemporary world needs: Complexity.",
         nosotrosName: "Matías Deneken",
         perfilCargo: "Founder of Methodolab",
-        nosotrosBio1: "Matías Deneken is a researcher in social science methodology, specialized in the development and application of advanced techniques for social data analysis. His work focuses on the intersection between quantitative methodology, data analysis and social sciences, with emphasis on causal inference, complex data analysis and information visualization.",
-        nosotrosBio2: "Through Methodolab, he directs research projects that combine methodological rigor with practical applications, developing tools and techniques that allow addressing complex research questions. His research covers topics such as election analysis, internal migration, social inequalities and experimental methodologies.",
-        nosotrosBio3: "In addition to his research work, Matías is dedicated to the dissemination of advanced methodologies through academic and outreach publications, as well as the development of software and computational tools to facilitate social data analysis.",
-        nosotrosBio4: "Methodolab is a social science methodology laboratory that seeks to analyze and develop advanced methodologies for research, combining methodological rigor with practical applications in relevant research problems.",
         
         // Contacto
         contactoTitle: "Contact",
@@ -80,9 +92,23 @@ const translations = {
         por: "by",
         verMas: "See all publications",
         verTodasInteractivas: "See all interactive tools",
+        volverPublicaciones: "← Back to Publications",
+        loUltimo: "Latest",
+        noPublicaciones: "No publications available.",
         
         // Botones
-        btnSobreNosotros: "About Us"
+        btnSobreNosotros: "About Us",
+        
+        // Categorías
+        categoriaEducacion: "education",
+        categoriaMetodologia: "methodology",
+        categoriaGenero: "gender",
+        categoriaNacional: "national",
+        categoriaElecciones: "elections",
+        
+        // Tipos
+        tipoDifusion: "Dissemination",
+        tipoAcademico: "Academic"
     }
 };
 
@@ -133,6 +159,37 @@ function updatePageLanguage() {
             btn.classList.add('active');
         }
     });
+}
+
+// Función helper global para obtener traducciones
+function getTranslation(key) {
+    const lang = localStorage.getItem('language') || 'es';
+    if (typeof translations !== 'undefined' && translations[lang] && translations[lang][key]) {
+        return translations[lang][key];
+    }
+    // Fallback a español
+    if (translations && translations.es && translations.es[key]) {
+        return translations.es[key];
+    }
+    return key;
+}
+
+// Función helper global para traducir categorías
+function getCategoryTranslation(category) {
+    const lang = localStorage.getItem('language') || 'es';
+    const categoryMap = {
+        'educación': 'categoriaEducacion',
+        'educacion': 'categoriaEducacion',
+        'metodología': 'categoriaMetodologia',
+        'metodologia': 'categoriaMetodologia',
+        'género': 'categoriaGenero',
+        'genero': 'categoriaGenero',
+        'nacional': 'categoriaNacional',
+        'elecciones': 'categoriaElecciones'
+    };
+    
+    const key = categoryMap[category] || category;
+    return getTranslation(key) || category;
 }
 
 // Inicializar cuando se carga la página

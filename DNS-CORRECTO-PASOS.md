@@ -106,3 +106,9 @@ dig www.methodolab.com CNAME +short
 
 
 
+
+
+
+
+
+

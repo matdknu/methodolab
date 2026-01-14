@@ -111,3 +111,9 @@ O puedes usar ambos sistemas:
 - Las imágenes generadas por código R se guardan automáticamente
 - Puedes combinar Markdown, código R, y HTML en el mismo documento
 
+
+
+
+
+
+

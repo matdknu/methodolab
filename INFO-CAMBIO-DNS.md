@@ -58,3 +58,9 @@ Puede que necesites volver a configurarlo.
 
 **Resumen:** El cambio es solo en tu Mac y es temporal. Puedes revertirlo cuando quieras. El sitio funciona correctamente, solo necesitabas evitar el caché DNS del router.
 
+
+
+
+
+
+

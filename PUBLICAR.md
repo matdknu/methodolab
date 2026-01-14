@@ -132,3 +132,7 @@ node scripts/publicar.js --push
 - Ver `COMO-AGREGAR-PUBLICACIONES-QMD.md` para más detalles
 - Ver `RENDERIZAR-DESDE-R.md` para usar código R
 
+
+
+
+

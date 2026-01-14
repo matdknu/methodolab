@@ -242,3 +242,6 @@ Ver `Publicaciones/paes-desigualdad.html` como referencia de una publicación co
 - Asegúrate de usar la estructura HTML correcta
 - Verifica que todas las clases CSS estén presentes
 
+
+
+

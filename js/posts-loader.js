@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 renderPostsGrid(regularPosts.slice(0, postsToShow));
                 updateVerMasButton(regularPosts.length);
             }
+            
+            // También actualizar posts en posts-all.js si existe
+            if (typeof renderAllPosts === 'function' && window.allPosts) {
+                renderAllPosts(window.allPosts);
+            }
         };
     }
     // Intentar cargar desde posts.json primero
@@ -84,6 +89,7 @@ function renderFeaturedPost(post) {
     const container = document.getElementById('destacado-container');
     const imageHTML = getImageHTML(post.image);
     const tipoLabel = getTipoLabel(post.tipo);
+    const categoryText = getCategoryTranslationLocal(post.category);
     
     container.innerHTML = `
         <div class="destacado">
@@ -95,18 +101,18 @@ function renderFeaturedPost(post) {
                     </noscript>
                 </div>
                 <div class="destacado-text">
-                    <span class="destacado-category">${post.category}</span>
+                    <span class="destacado-category">${categoryText}</span>
                     <h2 class="destacado-title">
                         <a href="${post.link}">${post.title}</a>
                         ${tipoLabel}
                     </h2>
                     <p class="destacado-meta">
-                        ${post.date} ${getTranslation('por')} <a href="${post.authorLink}">${post.author}</a>
+                        ${post.date} ${getTranslationLocal('por')} <a href="${post.authorLink}">${post.author}</a>
                     </p>
                     <p class="destacado-description">
                         ${post.description}
                     </p>
-                    <a href="${post.link}" class="destacado-link">${getTranslation('leerMas')}</a>
+                    <a href="${post.link}" class="destacado-link">${getTranslationLocal('leerMas')}</a>
                 </div>
             </div>
         </div>
@@ -117,25 +123,26 @@ function renderPostsGrid(posts) {
     const container = document.getElementById('articulos-container');
     
     if (posts.length === 0) {
-        container.innerHTML = '<p class="no-posts">No hay publicaciones disponibles.</p>';
+        container.innerHTML = `<p class="no-posts">${getTranslationLocal('noPublicaciones')}</p>`;
         return;
     }
 
     container.innerHTML = posts.map(post => {
         const imageHTML = getImageHTML(post.image);
         const tipoLabel = getTipoLabel(post.tipo);
+        const categoryText = getCategoryTranslationLocal(post.category);
         return `
             <article class="articulo-item" data-tipo="${post.tipo}">
                 <div class="articulo-image">
                     ${imageHTML}
                 </div>
-                <span class="articulo-category">${post.category}</span>
+                <span class="articulo-category">${categoryText}</span>
                 <h3 class="articulo-title">
                     <a href="${post.link}">${post.title}</a>
                     ${tipoLabel}
                 </h3>
                 <p class="articulo-meta">
-                    ${post.date} ${getTranslation('por')} <a href="${post.authorLink}">${post.author}</a>
+                    ${post.date} ${getTranslationLocal('por')} <a href="${post.authorLink}">${post.author}</a>
                 </p>
                 <p class="articulo-description">
                     ${post.description}
@@ -168,22 +175,48 @@ function getImageHTML(imageValue) {
 function getTipoLabel(tipo) {
     if (!tipo) return '';
     
-    const labels = {
-        'difusion': '<span class="tipo-label tipo-difusion">Difusión</span>',
-        'academico': '<span class="tipo-label tipo-academico">Académico</span>'
-    };
+    let labelText = '';
     
-    return labels[tipo] || '';
+    if (tipo === 'difusion') {
+        labelText = typeof getTranslation === 'function' ? getTranslation('tipoDifusion') : 'Difusión';
+    } else if (tipo === 'academico') {
+        labelText = typeof getTranslation === 'function' ? getTranslation('tipoAcademico') : 'Académico';
+    }
+    
+    return `<span class="tipo-label tipo-${tipo}">${labelText}</span>`;
 }
 
-function getTranslation(key) {
+// Usar función global si está disponible, sino usar función local
+const getCategoryTranslationLocal = function(category) {
+    if (typeof getCategoryTranslation === 'function') {
+        return getCategoryTranslation(category);
+    }
+    // Fallback local
+    const categoryMap = {
+        'educación': 'educación',
+        'educacion': 'educación',
+        'metodología': 'metodología',
+        'metodologia': 'metodología',
+        'género': 'género',
+        'genero': 'género',
+        'nacional': 'nacional',
+        'elecciones': 'elecciones'
+    };
+    return categoryMap[category] || category;
+};
+
+// Usar función global si está disponible
+const getTranslationLocal = function(key) {
+    if (typeof getTranslation === 'function') {
+        return getTranslation(key);
+    }
+    // Fallback local
     const lang = localStorage.getItem('language') || 'es';
     if (typeof translations !== 'undefined' && translations[lang] && translations[lang][key]) {
         return translations[lang][key];
     }
-    // Fallback a español
     if (translations && translations.es && translations.es[key]) {
         return translations.es[key];
     }
     return key;
-}
+};
