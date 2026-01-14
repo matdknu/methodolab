@@ -1,0 +1,62 @@
+---
+title: "CASEN 2024: Nudos de una desigualdad multidimensional"
+tipo: "difusion"
+category: "desigualdad"
+date: "Enero 15, de 2026"
+author: "Matías Deneken"
+authorLink: "#"
+description: "La CASEN 2024 revela una desigualdad que se expresa en múltiples dimensiones: discriminación por orientación sexual, brechas salariales de género, redes de apoyo diferenciadas y tiempos de traslado desiguales según territorio."
+link: "Publicaciones/casen-desigualdad.html"
+featured: true
+image_path: "images/logo_publicacion.png"
+---
+
+La Encuesta de Caracterización Socioeconómica Nacional (CASEN) 2024 no solo mide pobreza e ingresos: permite rastrear desigualdades que se cruzan y refuerzan mutuamente. En este análisis exploramos **cuatro nudos** donde la desigualdad se hace visible: orientación sexual, género, redes de apoyo y territorio. Ninguno opera solo; todos se entrelazan.
+
+![CASEN 2024: Nudos de una desigualdad multidimensional](images/logo_publicacion.png)
+
+## 1) Discriminación: ser LGBTQ+ en Chile
+
+El primer nudo es la discriminación. Según CASEN 2024, **el 27,9% de las personas LGBTQ+ ha sufrido algún tipo de discriminación** —por ropa, color de piel, edad, orientación u otros motivos—, frente al 11,2% de las personas heterosexuales. Una brecha de **16,7 puntos porcentuales** que no puede explicarse por diferencias individuales: refleja un entramado cultural e institucional que sanciona la diversidad.
+
+Lo interesante es que la discriminación reportada no se limita a la orientación sexual: la pregunta incluye múltiples motivos. Esto sugiere que las personas LGBTQ+ enfrentan una **vulnerabilidad transversal** que las expone a distintas formas de exclusión.
+
+![Experiencias de discriminación LGBTQ+ vs Heterosexuales](images/discriminacion_lgbtq_vs_hetero.png)
+
+## 2) La brecha salarial de género persiste
+
+El segundo nudo es conocido pero no por eso menos urgente: **la brecha de ingresos entre hombres y mujeres atraviesa todos los niveles educativos**. Desde quienes no tienen educación formal hasta quienes completaron estudios universitarios, los hombres ganan más.
+
+El heatmap muestra las diferencias marcadas con asterisco (*) donde la brecha es estadísticamente significativa. En el nivel universitario completo, por ejemplo, el ingreso mediano de los hombres alcanza **$675.000**, mientras que el de las mujeres es de **$600.000**. No es solo una diferencia de $75.000: es un patrón que se replica —con distintas magnitudes— en casi todos los niveles.
+
+¿Por qué importa esto? Porque indica que la educación, si bien reduce la pobreza, **no elimina la desigualdad de género**. El mercado laboral sigue operando con sesgos que ni el título universitario logra corregir.
+
+![Heatmap: Ingreso mediano por sexo y nivel de escolaridad](images/heatmap_ingreso_sexo_escolaridad.png)
+
+## 3) Redes de apoyo: la soledad diferenciada
+
+El tercer nudo es menos visible pero igual de estructural: **las redes de apoyo**. La CASEN pregunta si las personas conocen a alguien que pueda ayudarles en distintas situaciones: conseguir trabajo, apoyo emocional, préstamo de dinero, cuidado de niños, entre otras.
+
+Lo que emerge es un patrón complejo. En algunos ámbitos, como **conseguir trabajo**, las personas LGBTQ+ reportan mayor falta de apoyo (35,6% vs 42,8% de heterosexuales que sí tienen redes). Sin embargo, en otras dimensiones —como cuidado de niños o facilitar vehículo— la situación se invierte.
+
+¿Qué significa esto? Que las redes de apoyo no son homogéneas: **dependen del tipo de recurso que se necesita y de las configuraciones familiares y comunitarias** de cada grupo. Las personas LGBTQ+ pueden tener redes de apoyo emocional más diversas, pero enfrentar mayor aislamiento cuando se trata de recursos laborales o económicos.
+
+![Falta de redes de apoyo: LGBTQ+ vs Heterosexuales](images/redes_apoyo_lgbtq_vs_hetero.png)
+
+## 4) El territorio como desigualdad cotidiana
+
+El cuarto nudo es el territorio. Y aquí la desigualdad se mide en minutos: **los habitantes de La Granja tardan en promedio 50 minutos en llegar al trabajo, mientras que los de Lo Barnechea tardan 32,6 minutos**.
+
+Son casi 18 minutos de diferencia. Multiplicados por dos viajes al día, cinco días a la semana, cuatro semanas al mes: **más de 12 horas mensuales** que las personas de comunas vulnerables "pierden" en traslados. Tiempo que no se usa para descanso, cuidado, formación o recreación.
+
+La comparación entre Lo Barnechea y La Granja no es casual: ambas comunas de Santiago, pero en polos opuestos de la distribución de ingresos. El tiempo de viaje no es solo una incomodidad: es **una expresión espacial de la desigualdad**, donde la segregación urbana se traduce en costos diferenciados de movilidad.
+
+![Diferencia en tiempo de viaje al trabajo: La Granja vs Lo Barnechea](images/tiempo_viaje_lo_barnechea_la_granja.png)
+
+## La desigualdad como sistema
+
+Estos cuatro nudos —discriminación, género, redes y territorio— no son problemas aislados. Se cruzan y refuerzan: una mujer LGBTQ+ de La Granja enfrenta, simultáneamente, mayor discriminación, menores ingresos, redes de apoyo laboral más frágiles y tiempos de traslado que le restan autonomía.
+
+**La CASEN 2024 permite ver la desigualdad como un sistema**, no como una suma de problemas separados. Y esa mirada integrada es el primer paso para pensar políticas que no aborden cada dimensión por separado, sino que reconozcan su interdependencia.
+
+Cuatro nudos. Un mismo tejido. Y el desafío de desatarlos —o al menos aflojarlos— con evidencia y diseño institucional.

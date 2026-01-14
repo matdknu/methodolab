@@ -5,6 +5,5 @@
 
 /.quarto/
 
-# Archivos QMD - trabajo interno, no se muestran en GitHub
-Publicaciones-QMD/
+# Archivos renderizados por Quarto
 publicaciones-renderizadas/
