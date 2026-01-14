@@ -1389,13 +1389,21 @@ a:hover {
 .articulo-imagen-principal {
     width: 100%;
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-light);
 }
 
 .articulo-imagen-principal .post-image-real {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
+    max-height: 600px;
     display: block;
     border: 1px solid var(--border);
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .articulo-imagen-principal .image-mapa,
