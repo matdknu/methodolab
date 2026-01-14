@@ -2,7 +2,7 @@
 title: "La selección universitaria en Chile: tres problemas y una buena noticia"
 tipo: "difusion"
 category: "educación"
-date: "Enero 16, de 2025"
+date: "Enero 8, de 2026"
 author: "Matías Deneken"
 authorLink: "#"
 description: "La Prueba de Acceso a la Educación Superior (PAES) vuelve a confirmar una tendencia de largo plazo: el establecimiento educacional del que egresas sigue siendo un determinante central del rendimiento en las pruebas de selección."
