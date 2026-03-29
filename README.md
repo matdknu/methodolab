@@ -62,7 +62,7 @@ El sitio está configurado para desplegarse en GitHub Pages. Para verlo en metho
    - En la misma página de Pages, agrega `methodolab.com` en Custom domain
    - Configura los registros DNS en tu proveedor de dominio
 
-Para instrucciones detalladas, consulta [DEPLOY.md](DEPLOY.md).
+Para instrucciones detalladas, consulta [DEPLOY.md](docs/operaciones/DEPLOY.md).
 
 **URL temporal:** https://matdknu.github.io/methodolab
 

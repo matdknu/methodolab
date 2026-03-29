@@ -113,6 +113,8 @@ function procesarPublicaciones() {
         const carpetas = fs.readdirSync(PUBLICACIONES_DIR, { withFileTypes: true })
             .filter(dirent => dirent.isDirectory())
             .map(dirent => dirent.name)
+            // Ignorar carpetas de plantillas o auxiliares
+            .filter(nombre => !nombre.startsWith('_') && nombre !== 'plantillas')
             .sort(); // Ordenar por nombre (fecha)
         
         console.log(`📁 Encontradas ${carpetas.length} carpetas de publicaciones .qmd`);

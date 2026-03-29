@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
         
-        if (currentScroll > 50) {
-            header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+        if (currentScroll > 80) {
+            header.style.boxShadow = '0 1px 8px rgba(0, 0, 0, 0.06)';
         } else {
             header.style.boxShadow = 'none';
         }
@@ -63,27 +63,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Fade in on scroll (subtle)
+    // Fade in on scroll
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
     };
 
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe articles for subtle fade-in
-    const articles = document.querySelectorAll('.articulo-item, .interactivo-item');
-    articles.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = `opacity 0.4s ease ${index * 0.1}s, transform 0.4s ease ${index * 0.1}s`;
-        observer.observe(el);
-    });
+    // Observe reveal sections
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(el => observer.observe(el));
 });

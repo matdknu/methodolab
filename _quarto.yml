@@ -3,6 +3,7 @@ project:
   output-dir: publicaciones-renderizadas
   render:
     - "Publicaciones-QMD/**/*.qmd"
+    - "!Publicaciones-QMD/_plantillas/**"
 
 website:
   title: "Methodolab Publicaciones"

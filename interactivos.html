@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="interactivos-page">
     <header class="header">
         <nav class="nav">
             <div class="container">
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title" data-translate="todasInteractivas">Todas las Interactivas</h1>
@@ -52,7 +52,30 @@
             </div>
         </section>
 
-        <section class="publicaciones">
+        <section class="org-section reveal">
+            <div class="container">
+                <h2 class="section-label">ORGANIGRAMA INTERACTIVO</h2>
+                <div class="org-grid">
+                    <article class="org-node">
+                        <span class="org-step">01</span>
+                        <h3 data-translate="orgInteractivos1Title">Diseño del problema</h3>
+                        <p data-translate="orgInteractivos1Text">Traducimos preguntas sociales en experiencias interactivas comprensibles.</p>
+                    </article>
+                    <article class="org-node">
+                        <span class="org-step">02</span>
+                        <h3 data-translate="orgInteractivos2Title">Modelado visual</h3>
+                        <p data-translate="orgInteractivos2Text">Construimos visualizaciones navegables para explorar patrones y comparaciones.</p>
+                    </article>
+                    <article class="org-node">
+                        <span class="org-step">03</span>
+                        <h3 data-translate="orgInteractivos3Title">Uso público</h3>
+                        <p data-translate="orgInteractivos3Text">Publicamos herramientas abiertas para docencia, medios y toma de decisiones.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="publicaciones reveal">
             <div class="container">
                 <!-- Grid de todas las interactivas se carga aquí -->
                 <div id="interactivos-container-todas" class="interactivos-grid-todas-list"></div>

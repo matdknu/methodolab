@@ -1,0 +1,39 @@
+---
+title: "TITULO DE LA PUBLICACION"
+tipo: "difusion"
+category: "nacional"
+date: "Marzo 29, de 2026"
+author: "Tu Nombre"
+authorLink: "#"
+description: "Resumen breve de 1-2 lineas para la portada."
+link: "Publicaciones/slug-publicacion.html"
+featured: false
+image_path: "images/imagen-principal.png"
+---
+
+## Bajada o introduccion corta
+
+Escribe aqui el primer parrafo de contexto. Este texto se puede editar libremente en Markdown.
+
+![Descripcion de la imagen principal](images/imagen-principal.png)
+
+---
+
+## Seccion 1
+
+Texto de la primera seccion.
+
+## Seccion 2
+
+Texto de la segunda seccion.
+
+## Conclusiones
+
+Puntos de cierre y llamados a la accion.
+
+---
+
+## Referencias (opcional)
+
+- Fuente 1
+- Fuente 2

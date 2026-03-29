@@ -9,8 +9,10 @@ const translations = {
         navContacto: "Contacto",
         
         // Hero
+        heroTag: "SOCIAL METHODOLOGY LABORATORY",
         heroLabel: "Laboratorio de Metodología Social",
         heroMission: "Investigación cuantitativa en ciencias sociales en Chile. Análisis riguroso sobre desigualdad, educación y política pública — comunicado con claridad.",
+        heroLetsTalk: "Conversemos",
         heroSubtitle: "Metodología en Ciencias Sociales",
         heroSubtitleEs: "Investigación social rigurosa, comunicada con claridad.",
         heroSubtitleEn: "Rigorous social research, communicated with clarity.",
@@ -24,6 +26,18 @@ const translations = {
         interactivosTitle: "— Interactivos",
         interactivo1: "Estudio Longitudinal de Relaciones Interculturales",
         interactivo2: "Google Trends: Análisis de Tendencias de Búsqueda",
+        orgPublicaciones1Title: "Exploración de datos",
+        orgPublicaciones1Text: "Levantamos evidencia cuantitativa y definimos preguntas relevantes para política pública.",
+        orgPublicaciones2Title: "Análisis y síntesis",
+        orgPublicaciones2Text: "Convertimos resultados técnicos en hallazgos comparables, claros y accionables.",
+        orgPublicaciones3Title: "Publicación abierta",
+        orgPublicaciones3Text: "Difundimos cada informe con visualización y contexto para discusión pública.",
+        orgInteractivos1Title: "Diseño del problema",
+        orgInteractivos1Text: "Traducimos preguntas sociales en experiencias interactivas comprensibles.",
+        orgInteractivos2Title: "Modelado visual",
+        orgInteractivos2Text: "Construimos visualizaciones navegables para explorar patrones y comparaciones.",
+        orgInteractivos3Title: "Uso público",
+        orgInteractivos3Text: "Publicamos herramientas abiertas para docencia, medios y toma de decisiones.",
         enFocoTitle: "— En foco",
         enFoco1: "Desigualdad y movilidad social",
         enFoco2: "Educación y trayectorias escolares",
@@ -41,8 +55,10 @@ const translations = {
         
         // Contacto
         contactoTitle: "Contacto",
+        contactoTitleAlt: "Trabajemos juntos",
         contactoText: "¿Te gustaría colaborar con nosotros? ¿Tienes alguna duda o comentario? ¡Escríbenos!",
         contactoCalendly: "o agenda una reunión directamente →",
+        contactoDirect: "o escríbenos directamente por correo.",
         
         // Footer
         footerText: "© 2025 Methodolab. Todos los derechos reservados.",
@@ -64,6 +80,20 @@ const translations = {
         ctaMission: "Somos un laboratorio de metodología aplicada a las ciencias sociales. Combinamos análisis cuantitativo, visualización de datos y comunicación estratégica para generar conocimiento que informe políticas públicas.",
         ctaMissionShort: "Conoce nuestro enfoque y equipo interdisciplinario.",
         sobreNosotrosInline: "Sobre Nosotros →",
+        statResearchers: "Investigadores activos",
+        statStudies: "Estudios longitudinales",
+        statCountry: "País de enfoque",
+        statSince: "Desde",
+        statValueYears: "+8 años",
+        statLabelYears: "De datos longitudinales",
+        statValueAxes: "3",
+        statLabelAxes: "Ejes de investigación",
+        statValueStack: "R · Python",
+        statLabelStack: "Stack metodológico",
+        statValueAccess: "Open access",
+        statLabelAccess: "Acceso abierto",
+        statValueReach: "Valor",
+        statLabelReach: "Producción y alcance",
         
         // Categorías
         categoriaEducacion: "educación",
@@ -85,8 +115,10 @@ const translations = {
         navContacto: "Contact",
         
         // Hero
+        heroTag: "SOCIAL METHODOLOGY LABORATORY",
         heroLabel: "Social Methodology Laboratory",
         heroMission: "Quantitative research in social sciences in Chile. Rigorous analysis of inequality, education, and public policy — communicated with clarity.",
+        heroLetsTalk: "Let's Talk",
         heroSubtitle: "Methodology in Social Sciences",
         heroSubtitleEs: "Investigación social rigurosa, comunicada con claridad.",
         heroSubtitleEn: "Rigorous social research, communicated with clarity.",
@@ -100,6 +132,18 @@ const translations = {
         interactivosTitle: "— Interactive",
         interactivo1: "Longitudinal Study of Intercultural Relations",
         interactivo2: "Google Trends: Search Trends Analysis",
+        orgPublicaciones1Title: "Data exploration",
+        orgPublicaciones1Text: "We gather quantitative evidence and define policy-relevant research questions.",
+        orgPublicaciones2Title: "Analysis and synthesis",
+        orgPublicaciones2Text: "We turn technical outputs into clear, comparable, and actionable findings.",
+        orgPublicaciones3Title: "Open publication",
+        orgPublicaciones3Text: "We publish each report with visual context to inform public discussion.",
+        orgInteractivos1Title: "Problem framing",
+        orgInteractivos1Text: "We translate social questions into understandable interactive experiences.",
+        orgInteractivos2Title: "Visual modeling",
+        orgInteractivos2Text: "We build navigable visual tools to explore patterns and comparisons.",
+        orgInteractivos3Title: "Public use",
+        orgInteractivos3Text: "We publish open tools for teaching, media, and decision-making.",
         enFocoTitle: "— In focus",
         enFoco1: "Inequality and social mobility",
         enFoco2: "Education and school trajectories",
@@ -117,8 +161,10 @@ const translations = {
         
         // Contacto
         contactoTitle: "Contact",
+        contactoTitleAlt: "Let's work together",
         contactoText: "Would you like to collaborate with us? Do you have any questions or comments? Write to us!",
         contactoCalendly: "or schedule a meeting directly →",
+        contactoDirect: "or write directly by email.",
         
         // Footer
         footerText: "© 2025 Methodolab. All rights reserved.",
@@ -140,6 +186,20 @@ const translations = {
         ctaMission: "We are a laboratory of applied methodology for the social sciences. We combine quantitative analysis, data visualization, and strategic communication to produce knowledge that informs public policy.",
         ctaMissionShort: "Learn about our approach and interdisciplinary team.",
         sobreNosotrosInline: "About Us →",
+        statResearchers: "Active researchers",
+        statStudies: "Longitudinal studies",
+        statCountry: "Country focus",
+        statSince: "Since",
+        statValueYears: "+8 years",
+        statLabelYears: "Of longitudinal data",
+        statValueAxes: "3",
+        statLabelAxes: "Research axes",
+        statValueStack: "R · Python",
+        statLabelStack: "Methodology stack",
+        statValueAccess: "Open access",
+        statLabelAccess: "Open access",
+        statValueReach: "Value",
+        statLabelReach: "Production and reach",
         
         // Categorías
         categoriaEducacion: "education",
