@@ -7,3 +7,12 @@
 
 # Archivos renderizados por Quarto
 publicaciones-renderizadas/
+
+# Manuales internos (no subir)
+MANUALES/
+
+# Documentacion operativa local
+GODADDY-*.md
+GODADDY-*.html
+*-DNS*.html
+SOLUCION-*.html
