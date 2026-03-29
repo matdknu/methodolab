@@ -9,15 +9,28 @@ const translations = {
         navContacto: "Contacto",
         
         // Hero
+        heroLabel: "Laboratorio de Metodología Social",
+        heroMission: "Investigación cuantitativa en ciencias sociales en Chile. Análisis riguroso sobre desigualdad, educación y política pública — comunicado con claridad.",
         heroSubtitle: "Metodología en Ciencias Sociales",
+        heroSubtitleEs: "Investigación social rigurosa, comunicada con claridad.",
+        heroSubtitleEn: "Rigorous social research, communicated with clarity.",
+        heroDescription: "Realizamos investigación cuantitativa en ciencias sociales en Chile, con foco en política pública, desigualdad y educación.",
+        heroVideoCaption: "Visual Methodolab — enfoque en investigación, datos y políticas públicas.",
         todasPublicaciones: "Todas las Publicaciones",
         todasInteractivas: "Todas las Interactivas",
         conversemos: "Conversemos",
         
         // Interactivos
-        interactivosTitle: "Interactivos",
+        interactivosTitle: "— Interactivos",
         interactivo1: "Estudio Longitudinal de Relaciones Interculturales",
         interactivo2: "Google Trends: Análisis de Tendencias de Búsqueda",
+        enFocoTitle: "— En foco",
+        enFoco1: "Desigualdad y movilidad social",
+        enFoco2: "Educación y trayectorias escolares",
+        enFoco3: "Opinión pública y elecciones",
+        sidebarContactoTitle: "— Contacto rápido",
+        sidebarContactoText: "¿Quieres conversar sobre una colaboración o asesoría aplicada?",
+        sidebarContactoLink: "Agenda una reunión →",
         
         // Nosotros
         nosotrosTitle: "Nosotros",
@@ -29,11 +42,15 @@ const translations = {
         // Contacto
         contactoTitle: "Contacto",
         contactoText: "¿Te gustaría colaborar con nosotros? ¿Tienes alguna duda o comentario? ¡Escríbenos!",
+        contactoCalendly: "o agenda una reunión directamente →",
         
         // Footer
-        footerText: "© 2024 Methodolab. Todos los derechos reservados.",
+        footerText: "© 2025 Methodolab. Todos los derechos reservados.",
         
         // Posts
+        ultimasPublicaciones: "Últimas Publicaciones",
+        filtroTodos: "Todos",
+        leer: "Leer →",
         leerMas: "Leer más →",
         por: "por",
         verMas: "Ver todas las publicaciones",
@@ -44,6 +61,9 @@ const translations = {
         
         // Botones
         btnSobreNosotros: "Sobre Nosotros",
+        ctaMission: "Somos un laboratorio de metodología aplicada a las ciencias sociales. Combinamos análisis cuantitativo, visualización de datos y comunicación estratégica para generar conocimiento que informe políticas públicas.",
+        ctaMissionShort: "Conoce nuestro enfoque y equipo interdisciplinario.",
+        sobreNosotrosInline: "Sobre Nosotros →",
         
         // Categorías
         categoriaEducacion: "educación",
@@ -65,15 +85,28 @@ const translations = {
         navContacto: "Contact",
         
         // Hero
+        heroLabel: "Social Methodology Laboratory",
+        heroMission: "Quantitative research in social sciences in Chile. Rigorous analysis of inequality, education, and public policy — communicated with clarity.",
         heroSubtitle: "Methodology in Social Sciences",
+        heroSubtitleEs: "Investigación social rigurosa, comunicada con claridad.",
+        heroSubtitleEn: "Rigorous social research, communicated with clarity.",
+        heroDescription: "We produce quantitative social science research in Chile, focused on public policy, inequality, and education.",
+        heroVideoCaption: "Methodolab visual brief — focused on research, data, and public policy.",
         todasPublicaciones: "All Publications",
         todasInteractivas: "All Interactive Tools",
         conversemos: "Let's Talk",
         
         // Interactivos
-        interactivosTitle: "Interactive",
+        interactivosTitle: "— Interactive",
         interactivo1: "Longitudinal Study of Intercultural Relations",
         interactivo2: "Google Trends: Search Trends Analysis",
+        enFocoTitle: "— In focus",
+        enFoco1: "Inequality and social mobility",
+        enFoco2: "Education and school trajectories",
+        enFoco3: "Public opinion and elections",
+        sidebarContactoTitle: "— Quick contact",
+        sidebarContactoText: "Would you like to discuss collaboration or applied advisory work?",
+        sidebarContactoLink: "Schedule a meeting →",
         
         // Nosotros
         nosotrosTitle: "About Us",
@@ -85,11 +118,15 @@ const translations = {
         // Contacto
         contactoTitle: "Contact",
         contactoText: "Would you like to collaborate with us? Do you have any questions or comments? Write to us!",
+        contactoCalendly: "or schedule a meeting directly →",
         
         // Footer
-        footerText: "© 2024 Methodolab. All rights reserved.",
+        footerText: "© 2025 Methodolab. All rights reserved.",
         
         // Posts
+        ultimasPublicaciones: "Latest Publications",
+        filtroTodos: "All",
+        leer: "Read →",
         leerMas: "Read more →",
         por: "by",
         verMas: "See all publications",
@@ -100,6 +137,9 @@ const translations = {
         
         // Botones
         btnSobreNosotros: "About Us",
+        ctaMission: "We are a laboratory of applied methodology for the social sciences. We combine quantitative analysis, data visualization, and strategic communication to produce knowledge that informs public policy.",
+        ctaMissionShort: "Learn about our approach and interdisciplinary team.",
+        sobreNosotrosInline: "About Us →",
         
         // Categorías
         categoriaEducacion: "education",

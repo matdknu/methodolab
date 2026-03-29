@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Methodolab">
+    <meta name="description" content="Methodolab: Investigación social rigurosa, comunicada con claridad. Análisis cuantitativo, desigualdad, educación y políticas públicas en Chile.">
+    <meta property="og:title" content="Methodolab">
+    <meta property="og:description" content="Investigación social rigurosa, comunicada con claridad.">
+    <meta property="og:image" content="https://methodolab.com/logos/logo.png">
+    <meta property="og:url" content="https://methodolab.com">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Methodolab</title>
     <link rel="icon" type="image/png" href="logos/logo.png">
     <link rel="stylesheet" href="css/style.css">
@@ -16,11 +21,11 @@
         <nav class="nav">
             <div class="container">
                 <div class="nav-content">
-                    <a href="/" class="logo">
+                    <a href="index.html" class="logo">
                         <img src="logos/logo.png" alt="Methodolab" class="logo-img">
                     </a>
                     <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-inicio" data-translate="navInicio">Inicio</a></li>
+                        <li><a href="index.html" class="nav-inicio nav-link-active" data-translate="navInicio" aria-current="page">Inicio</a></li>
                         <li><a href="publicaciones.html" data-translate="navPublicaciones">Publicaciones</a></li>
                         <li><a href="interactivos.html" data-translate="navInteractivos">Interactivos</a></li>
                         <li><a href="nosotros.html" data-translate="navSobreNosotros">Sobre Nosotros</a></li>
@@ -28,14 +33,8 @@
                     </ul>
                     <div class="nav-right">
                         <div class="lang-selector">
-                            <button class="lang-btn" onclick="changeLanguage('es')" title="Español">
-                                <span class="flag">🇨🇱</span>
-                                <span class="lang-code">ESP</span>
-                            </button>
-                            <button class="lang-btn" onclick="changeLanguage('en')" title="English">
-                                <span class="flag">🇬🇧</span>
-                                <span class="lang-code">ENG</span>
-                            </button>
+                            <button class="lang-btn" onclick="changeLanguage('es')" title="Español">ES</button>
+                            <button class="lang-btn" onclick="changeLanguage('en')" title="English">EN</button>
                         </div>
                         <button class="menu-toggle" aria-label="Toggle menu">
                             <span></span>
@@ -51,14 +50,33 @@
     <main>
         <section class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Methodolab</h1>
-                    <a href="https://calendly.com/contact-methodolab/30min?month=2026-01" target="_blank" rel="noopener noreferrer" class="btn-conversemos" data-translate="conversemos">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                        Conversemos
-                    </a>
+                <div class="hero-split">
+                    <!-- Columna izquierda: identidad + misión + CTAs -->
+                    <div class="hero-left">
+                        <p class="hero-label" data-translate="heroLabel">Laboratorio de Metodología Social</p>
+                        <h1 class="hero-title">Methodolab</h1>
+                        <div class="hero-rule" aria-hidden="true"></div>
+                        <p class="hero-mission" data-translate="heroMission">
+                            Investigación cuantitativa en ciencias sociales en Chile. Análisis riguroso sobre desigualdad, educación y política pública — comunicado con claridad.
+                        </p>
+                        <div class="hero-ctas">
+                            <a href="https://calendly.com/contact-methodolab/30min?month=2026-01" target="_blank" rel="noopener noreferrer" class="btn-conversemos" data-translate="conversemos">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                Conversemos
+                            </a>
+                            <a href="nosotros.html" class="btn-hero-nosotros" data-translate="sobreNosotrosInline">Sobre Nosotros →</a>
+                        </div>
+                    </div>
+                    <!-- Columna derecha: vídeo prominente -->
+                    <div class="hero-right">
+                        <figure class="hero-video-frame">
+                            <video class="hero-video-player" autoplay muted loop playsinline preload="metadata">
+                                <source src="logos/METHODOLAB-2.mp4" type="video/mp4">
+                            </video>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,9 +86,11 @@
             <div class="container">
                 <div class="publicaciones-layout">
                     <div class="publicaciones-main">
+                        <span class="section-label" data-translate="ultimasPublicaciones">Últimas Publicaciones</span>
+                        <!-- Filtros por categoría -->
+                        <div id="filtros-container" class="filtros-container"></div>
                         <!-- Destacado se carga aquí -->
                         <div id="destacado-container"></div>
-                        
                         <!-- Grid de artículos se carga aquí -->
                         <div id="articulos-container" class="articulos-grid"></div>
                         
@@ -81,21 +101,15 @@
                     </div>
                     
                     <aside class="interactivos-sidebar">
-                        <h2 class="sidebar-title" data-translate="interactivosTitle">Interactivos</h2>
+                        <h2 class="sidebar-title" data-translate="interactivosTitle">— Interactivos</h2>
                         <div class="interactivos-list" id="interactivos-container">
                             <div class="interactivo-item">
                                 <a href="https://matdknu.shinyapps.io/interculturales/" target="_blank" rel="noopener noreferrer">
-                                    <div class="interactivo-image">
-                                        <div class="data-visualization"></div>
-                                    </div>
                                     <h3 data-translate="interactivo1">Estudio Longitudinal de Relaciones Interculturales</h3>
                                 </a>
                             </div>
                             <div class="interactivo-item">
                                 <a href="https://matdknu.shinyapps.io/google-trends-demo/" target="_blank" rel="noopener noreferrer">
-                                    <div class="interactivo-image">
-                                        <img src="images/google_trends.png" alt="Google Trends: Análisis de Tendencias de Búsqueda" class="post-image-real" loading="lazy">
-                                    </div>
                                     <h3 data-translate="interactivo2">Google Trends: Análisis de Tendencias de Búsqueda</h3>
                                 </a>
                             </div>
@@ -103,6 +117,21 @@
                         <div class="interactivos-ver-mas-container" id="interactivos-ver-mas">
                             <a href="interactivos.html" class="interactivos-ver-mas-btn" data-translate="verTodasInteractivas">Ver todas las interactivas</a>
                         </div>
+
+                        <section class="sidebar-panel">
+                            <h3 class="sidebar-title" data-translate="enFocoTitle">— En foco</h3>
+                            <ul class="sidebar-links">
+                                <li><a href="publicaciones.html" data-translate="enFoco1">Desigualdad y movilidad social</a></li>
+                                <li><a href="publicaciones.html" data-translate="enFoco2">Educación y trayectorias escolares</a></li>
+                                <li><a href="publicaciones.html" data-translate="enFoco3">Opinión pública y elecciones</a></li>
+                            </ul>
+                        </section>
+
+                        <section class="sidebar-panel sidebar-contact">
+                            <h3 class="sidebar-title" data-translate="sidebarContactoTitle">— Contacto rápido</h3>
+                            <p data-translate="sidebarContactoText">¿Quieres conversar sobre una colaboración o asesoría aplicada?</p>
+                            <a href="https://calendly.com/contact-methodolab/30min?month=2026-01" target="_blank" rel="noopener noreferrer" data-translate="sidebarContactoLink">Agenda una reunión →</a>
+                        </section>
                     </aside>
                 </div>
             </div>
@@ -111,7 +140,8 @@
         <section class="sobre-nosotros-cta">
             <div class="container">
                 <div class="cta-content">
-                    <a href="nosotros.html" class="btn-sobre-nosotros" data-translate="btnSobreNosotros">Sobre Nosotros</a>
+                    <p class="cta-mission" data-translate="ctaMissionShort">Conoce nuestro enfoque y equipo interdisciplinario.</p>
+                    <a href="nosotros.html" class="cta-inline-link" data-translate="sobreNosotrosInline">Sobre Nosotros →</a>
                 </div>
             </div>
         </section>
@@ -124,8 +154,9 @@
                         ¿Te gustaría colaborar con nosotros? ¿Tienes alguna duda o comentario? 
                         ¡Escríbenos!
                     </p>
-                    <p>
-                        <a href="mailto:contacto@methodolab.com">contacto@methodolab.com</a>
+                    <p class="contacto-email"><a href="mailto:contacto@methodolab.com">contacto@methodolab.com</a></p>
+                    <p class="contacto-calendly">
+                        <a href="https://calendly.com/contact-methodolab/30min?month=2026-01" target="_blank" rel="noopener noreferrer" data-translate="contactoCalendly">o agenda una reunión directamente →</a>
                     </p>
                 </div>
             </div>
@@ -134,7 +165,14 @@
 
     <footer class="footer">
         <div class="container">
-            <p data-translate="footerText">&copy; 2024 Methodolab. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <p data-translate="footerText">&copy; 2025 Methodolab. Todos los derechos reservados.</p>
+                <nav class="footer-nav" aria-label="Footer">
+                    <a href="index.html" data-translate="navInicio">Inicio</a>
+                    <a href="publicaciones.html" data-translate="navPublicaciones">Publicaciones</a>
+                    <a href="nosotros.html" data-translate="navSobreNosotros">Sobre Nosotros</a>
+                </nav>
+            </div>
         </div>
     </footer>
 

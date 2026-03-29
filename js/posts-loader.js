@@ -2,6 +2,7 @@
 // Asegurar que las traducciones estén disponibles
 let postsToShow = 4; // Mostrar solo 4 inicialmente
 let allRegularPosts = [];
+let activeFilter = 'todos';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Re-renderizar posts cuando cambie el idioma
@@ -9,12 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         window.languageChangeCallback = function() {
             // Re-cargar y renderizar posts con nuevo idioma
             if (window.allPosts && window.allPosts.length > 0) {
-                const featuredPost = window.allPosts.find(post => post.featured);
-                const regularPosts = window.allPosts.filter(post => !post.featured);
-                allRegularPosts = regularPosts;
-                if (featuredPost) renderFeaturedPost(featuredPost);
-                renderPostsGrid(regularPosts.slice(0, postsToShow));
-                updateVerMasButton(regularPosts.length);
+                const orderedPosts = [...window.allPosts].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
+                allRegularPosts = orderedPosts;
+                renderPostsGrid(orderedPosts.slice(0, postsToShow));
+                updateVerMasButton(orderedPosts.length);
             }
             
             // También actualizar posts en posts-all.js si existe
@@ -52,26 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function renderPosts(posts) {
-    // Separar posts destacados y regulares
-    const featuredPost = posts.find(post => post.featured === true);
-    const regularPosts = posts.filter(post => post.featured !== true);
-    allRegularPosts = regularPosts;
+    // Newsroom layout: todas las publicaciones en un solo grid.
+    // Si existe una destacada, se prioriza en orden, pero mantiene el mismo estilo.
+    const orderedPosts = [...posts].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
+    allRegularPosts = orderedPosts;
 
-    console.log('Publicación destacada:', featuredPost ? featuredPost.title : 'ninguna');
-    console.log('Publicaciones regulares:', regularPosts.length);
-    console.log('Mostrando en grid:', Math.min(regularPosts.length, postsToShow));
+    console.log('Publicaciones totales:', orderedPosts.length);
+    console.log('Mostrando en grid:', Math.min(orderedPosts.length, postsToShow));
 
-    // Renderizar post destacado
-    if (featuredPost) {
-        renderFeaturedPost(featuredPost);
-    }
-
-    // Renderizar solo los primeros 4 posts (sin destacados)
-    const postsToDisplay = regularPosts.slice(0, postsToShow);
+    // Renderizar filtros y primeros posts
+    renderFiltros(orderedPosts);
+    const postsToDisplay = orderedPosts.slice(0, postsToShow);
     renderPostsGrid(postsToDisplay);
-    
-    // Mostrar/ocultar botón "Ver más" (debe haber más de 4 regulares)
-    updateVerMasButton(regularPosts.length);
+
+    // Mostrar/ocultar botón "Ver más"
+    updateVerMasButton(orderedPosts.length);
 }
 
 function updateVerMasButton(totalPosts) {
@@ -85,38 +79,31 @@ function updateVerMasButton(totalPosts) {
     }
 }
 
-function renderFeaturedPost(post) {
-    const container = document.getElementById('destacado-container');
-    const imageHTML = getImageHTML(post.image);
-    const tipoLabel = getTipoLabel(post.tipo);
-    const categoryText = getCategoryTranslationLocal(post.category);
-    
-    container.innerHTML = `
-        <div class="destacado">
-            <div class="destacado-content">
-                <div class="destacado-image">
-                    ${imageHTML}
-                    <noscript>
-                        <img src="${post.image}" alt="Imagen de la publicación" class="post-image-real">
-                    </noscript>
-                </div>
-                <div class="destacado-text">
-                    <span class="destacado-category">${categoryText}</span>
-                    <h2 class="destacado-title">
-                        <a href="${post.link}">${post.title}</a>
-                        ${tipoLabel}
-                    </h2>
-                    <p class="destacado-meta">
-                        ${post.date} ${getTranslationLocal('por')} <a href="${post.authorLink}">${post.author}</a>
-                    </p>
-                    <p class="destacado-description">
-                        ${post.description}
-                    </p>
-                    <a href="${post.link}" class="destacado-link">${getTranslationLocal('leerMas')}</a>
-                </div>
-            </div>
-        </div>
-    `;
+function renderFiltros(posts) {
+    const container = document.getElementById('filtros-container');
+    if (!container) return;
+
+    const categories = [...new Set(posts.map(p => p.category).filter(Boolean))];
+    const allLabel = getTranslationLocal('filtroTodos');
+
+    container.innerHTML = ['todos', ...categories].map(cat => {
+        const label = cat === 'todos' ? allLabel : getCategoryTranslationLocal(cat);
+        const isActive = activeFilter === cat;
+        return `<button class="filtro-btn${isActive ? ' filtro-active' : ''}" data-category="${cat}">${label}</button>`;
+    }).join('');
+
+    container.querySelectorAll('.filtro-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            activeFilter = btn.dataset.category;
+            container.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('filtro-active'));
+            btn.classList.add('filtro-active');
+            const filtered = activeFilter === 'todos'
+                ? allRegularPosts
+                : allRegularPosts.filter(p => p.category === activeFilter);
+            renderPostsGrid(filtered.slice(0, postsToShow));
+            updateVerMasButton(filtered.length);
+        });
+    });
 }
 
 function renderPostsGrid(posts) {
@@ -129,24 +116,23 @@ function renderPostsGrid(posts) {
 
     container.innerHTML = posts.map(post => {
         const imageHTML = getImageHTML(post.image);
-        const tipoLabel = getTipoLabel(post.tipo);
         const categoryText = getCategoryTranslationLocal(post.category);
         return `
-            <article class="articulo-item" data-tipo="${post.tipo}">
-                <div class="articulo-image">
-                    ${imageHTML}
+            <article class="articulo-item fade-in" data-tipo="${post.tipo}" data-category="${post.category || ''}">
+                <a href="${post.link}" class="articulo-card-link" tabindex="-1" aria-hidden="true">
+                    <div class="articulo-image">${imageHTML}</div>
+                </a>
+                <div class="articulo-body">
+                    <span class="articulo-category" data-tipo="${post.tipo}">${categoryText}</span>
+                    <h3 class="articulo-title">
+                        <a href="${post.link}">${post.title}</a>
+                    </h3>
+                    <p class="articulo-description">${post.description}</p>
+                    <div class="articulo-footer">
+                        <p class="articulo-meta">${post.date} · <a href="${post.authorLink}">${post.author}</a></p>
+                        <a href="${post.link}" class="btn-leer">${getTranslationLocal('leer')}</a>
+                    </div>
                 </div>
-                <span class="articulo-category">${categoryText}</span>
-                <h3 class="articulo-title">
-                    <a href="${post.link}">${post.title}</a>
-                    ${tipoLabel}
-                </h3>
-                <p class="articulo-meta">
-                    ${post.date} ${getTranslationLocal('por')} <a href="${post.authorLink}">${post.author}</a>
-                </p>
-                <p class="articulo-description">
-                    ${post.description}
-                </p>
             </article>
         `;
     }).join('');
