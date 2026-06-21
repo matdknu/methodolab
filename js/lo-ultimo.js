@@ -7,30 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentPath = window.location.pathname;
     const currentLink = currentPath.split('/').pop();
 
-    // Interactivos disponibles
-    const interactivos = [
-        {
-            url: "https://matdknu.shinyapps.io/interculturales/",
-            title: "Estudio Longitudinal de Relaciones Interculturales",
-            image: "data-visualization",
-            tipo: "interactivo",
-            category: "Interactivo"
-        },
-        {
-            url: "https://matdknu.shinyapps.io/google-trends-demo/",
-            title: "Google Trends: Análisis de Tendencias de Búsqueda",
-            image: "images/google_trends.png",
-            tipo: "interactivo",
-            category: "Interactivo"
-        },
-        {
-            url: "https://matdknu.shinyapps.io/phd_proposal/",
-            title: "Social Pulse Simulation",
-            image: "code-repo",
-            tipo: "interactivo",
-            category: "Interactivo"
-        }
-    ];
+    const interactivos = [];
 
     // Cargar publicaciones
     fetch('../posts.json')

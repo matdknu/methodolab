@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Methodolab - Todas las Interactivas">
-    <title>Todas las Interactivas | Methodolab</title>
+    <meta name="description" content="Methodolab — Interactivos">
+    <title>Interactivos | Methodolab</title>
     <link rel="icon" type="image/png" href="logos/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="interactivos-page">
+
+    <!-- Utility bar -->
+    <div class="utility-bar">
+        <div class="container">
+            <span class="utility-bar-left">Investigación social · Chile</span>
+            <div class="utility-bar-right">
+                <a href="mailto:hello@methodolab.com">hello@methodolab.com</a>
+                <a href="https://calendly.com/contact-methodolab/30min" target="_blank" rel="noopener noreferrer">Agendar reunión →</a>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="nav">
             <div class="container">
@@ -20,15 +32,16 @@
                         <img src="logos/logo.png" alt="Methodolab" class="logo-img">
                     </a>
                     <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-inicio nav-inicio-expanded" data-translate="navInicio">Inicio</a></li>
+                        <li><a href="index.html" data-translate="navInicio">Inicio</a></li>
                         <li><a href="publicaciones.html" data-translate="navPublicaciones">Publicaciones</a></li>
-                        <li><a href="interactivos.html" data-translate="navInteractivos">Interactivos</a></li>
+                        <li><a href="interactivos.html" class="nav-link-active" data-translate="navInteractivos" aria-current="page">Interactivos</a></li>
                         <li><a href="nosotros.html" data-translate="navSobreNosotros">Sobre Nosotros</a></li>
                         <li><a href="index.html#contacto" data-translate="navContacto">Contacto</a></li>
                     </ul>
                     <div class="nav-right">
                         <div class="lang-selector">
                             <button class="lang-btn" onclick="changeLanguage('es')" title="Español">ES</button>
+                            <span class="lang-separator" aria-hidden="true">|</span>
                             <button class="lang-btn" onclick="changeLanguage('en')" title="English">EN</button>
                         </div>
                         <button class="menu-toggle" aria-label="Toggle menu">
@@ -46,52 +59,36 @@
         <section class="hero reveal">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title" data-translate="todasInteractivas">Todas las Interactivas</h1>
+                    <h1 class="hero-title" data-translate="interactivosPageHeading">Interactivos</h1>
                     <p class="hero-subtitle" data-translate="heroSubtitle">Metodología en Ciencias Sociales</p>
                 </div>
             </div>
         </section>
 
-        <section class="org-section reveal">
+        <section class="interactivos-coming-soon-section reveal" aria-label="Próximamente">
             <div class="container">
-                <h2 class="section-label">ORGANIGRAMA INTERACTIVO</h2>
-                <div class="org-grid">
-                    <article class="org-node">
-                        <span class="org-step">01</span>
-                        <h3 data-translate="orgInteractivos1Title">Diseño del problema</h3>
-                        <p data-translate="orgInteractivos1Text">Traducimos preguntas sociales en experiencias interactivas comprensibles.</p>
-                    </article>
-                    <article class="org-node">
-                        <span class="org-step">02</span>
-                        <h3 data-translate="orgInteractivos2Title">Modelado visual</h3>
-                        <p data-translate="orgInteractivos2Text">Construimos visualizaciones navegables para explorar patrones y comparaciones.</p>
-                    </article>
-                    <article class="org-node">
-                        <span class="org-step">03</span>
-                        <h3 data-translate="orgInteractivos3Title">Uso público</h3>
-                        <p data-translate="orgInteractivos3Text">Publicamos herramientas abiertas para docencia, medios y toma de decisiones.</p>
-                    </article>
+                <div class="interactivos-coming-soon interactivos-coming-soon--hero">
+                    <p class="interactivos-coming-soon-line" data-translate="interactivosComingSoonLine">Próximamente</p>
+                    <p class="interactivos-coming-soon-hint" data-translate="interactivosComingSoonHint">Estamos preparando nuevas experiencias interactivas.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="publicaciones reveal">
-            <div class="container">
-                <!-- Grid de todas las interactivas se carga aquí -->
-                <div id="interactivos-container-todas" class="interactivos-grid-todas-list"></div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p data-translate="footerText">&copy; 2024 Methodolab. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <p data-translate="footerText">&copy; 2025 Methodolab. Todos los derechos reservados.</p>
+                <nav class="footer-nav" aria-label="Footer">
+                    <a href="index.html" data-translate="navInicio">Inicio</a>
+                    <a href="publicaciones.html" data-translate="navPublicaciones">Publicaciones</a>
+                    <a href="nosotros.html" data-translate="navSobreNosotros">Sobre Nosotros</a>
+                </nav>
+            </div>
         </div>
     </footer>
 
     <script src="js/translations.js"></script>
-    <script src="js/interactivos-all.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
-

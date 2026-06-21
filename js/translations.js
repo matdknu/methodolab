@@ -14,6 +14,9 @@ const translations = {
         heroMission: "Investigación cuantitativa en ciencias sociales en Chile. Análisis riguroso sobre desigualdad, educación y política pública — comunicado con claridad.",
         heroLetsTalk: "Conversemos",
         heroSubtitle: "Metodología en Ciencias Sociales",
+        iscssHeroTitle: "Laboratorio de Metodología Social",
+        iscssTagline: "Investigación cuantitativa rigurosa en ciencias sociales",
+        iscssLearnMore: "Saber más",
         heroSubtitleEs: "Investigación social rigurosa, comunicada con claridad.",
         heroSubtitleEn: "Rigorous social research, communicated with clarity.",
         heroDescription: "Realizamos investigación cuantitativa en ciencias sociales en Chile, con foco en política pública, desigualdad y educación.",
@@ -24,7 +27,10 @@ const translations = {
         
         // Interactivos
         interactivosTitle: "— Interactivos",
-        interactivo1: "Estudio Longitudinal de Relaciones Interculturales",
+        interactivosPageHeading: "Interactivos",
+        interactivosComingSoonLine: "Próximamente",
+        interactivosComingSoonHint: "Estamos preparando nuevas experiencias interactivas.",
+        interactivosAriaSection: "Interactivos: próximamente",
         interactivo2: "Google Trends: Análisis de Tendencias de Búsqueda",
         orgPublicaciones1Title: "Exploración de datos",
         orgPublicaciones1Text: "Levantamos evidencia cuantitativa y definimos preguntas relevantes para política pública.",
@@ -63,6 +69,18 @@ const translations = {
         // Footer
         footerText: "© 2025 Methodolab. Todos los derechos reservados.",
         
+        // Topic tags
+        temasInvestigacion: "Temas de investigación",
+        tagDesigualdad: "Desigualdad y movilidad",
+        tagEducacion: "Educación",
+        tagOpinion: "Opinión pública",
+        tagGenero: "Género",
+        tagMetodologia: "Metodología cuantitativa",
+        tagDatos: "Datos abiertos",
+
+        // Org labels
+        orgEditorialLabel: "Organigrama editorial",
+
         // Posts
         ultimasPublicaciones: "Últimas Publicaciones",
         filtroTodos: "Todos",
@@ -120,6 +138,9 @@ const translations = {
         heroMission: "Quantitative research in social sciences in Chile. Rigorous analysis of inequality, education, and public policy — communicated with clarity.",
         heroLetsTalk: "Let's Talk",
         heroSubtitle: "Methodology in Social Sciences",
+        iscssHeroTitle: "Social Methodology Laboratory",
+        iscssTagline: "Advancing rigorous quantitative research in the social sciences",
+        iscssLearnMore: "Learn More",
         heroSubtitleEs: "Investigación social rigurosa, comunicada con claridad.",
         heroSubtitleEn: "Rigorous social research, communicated with clarity.",
         heroDescription: "We produce quantitative social science research in Chile, focused on public policy, inequality, and education.",
@@ -130,6 +151,10 @@ const translations = {
         
         // Interactivos
         interactivosTitle: "— Interactive",
+        interactivosPageHeading: "Interactive",
+        interactivosComingSoonLine: "Coming soon",
+        interactivosComingSoonHint: "New interactive experiences are on the way.",
+        interactivosAriaSection: "Interactive: coming soon",
         interactivo1: "Longitudinal Study of Intercultural Relations",
         interactivo2: "Google Trends: Search Trends Analysis",
         orgPublicaciones1Title: "Data exploration",
@@ -169,6 +194,18 @@ const translations = {
         // Footer
         footerText: "© 2025 Methodolab. All rights reserved.",
         
+        // Topic tags
+        temasInvestigacion: "Research topics",
+        tagDesigualdad: "Inequality & mobility",
+        tagEducacion: "Education",
+        tagOpinion: "Public opinion",
+        tagGenero: "Gender",
+        tagMetodologia: "Quantitative methods",
+        tagDatos: "Open data",
+
+        // Org labels
+        orgEditorialLabel: "Editorial process",
+
         // Posts
         ultimasPublicaciones: "Latest Publications",
         filtroTodos: "All",
